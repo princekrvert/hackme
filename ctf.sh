@@ -9,11 +9,24 @@ user_inttrupt(){
 echo -e "\033[31;1m Exiting ctf tool.."
 exit 1
 }
+# Make a function to requirements 
+req(){
+# First check the os 
+os=$(uname -o)
+if [[ $os == "Android" ]];then
+	command -v go > /dev/null 2>&1 || { echo -e "\e[32;1m Installing golang "; pkg install golang -y ;}
+
+else
+	command -v go > /dev/null 2>&1 || { echo -e "\033;32;1m Installing golang "; sudo apt install golang -y ;}
+fi
+}
+# NOw call the requirements function 
+req 
 # Make a function for the About me 
 about_me(){
 echo -e "\e[32;1m Hi there , i am Prince Kumar a junior mechanical enginner. i am intrested in cyber security."
 echo -e "\e[32;1m Here is my social media links if you want to contact me."
-echo -e "\e[30;1m Instagram : https://instagram.com/princekrvert \n Facebook : https://facebook.com/princekrvet \n Telegram : t.me/princekrvert"
+echo -e "\e[30;1m Instagram : https://instagram.com/princekrvert \n Facebook : https://facebook.com/princekrvert \n Telegram : t.me/princekrvert"
 }
 # now make a banner for this tool 
 banner(){
@@ -40,7 +53,7 @@ elif [[ $user_f == "4" ]];then
 elif [[ $user_f == "5" ]];then 
 	echo -e "\033[30;1m Exit"
 else 
-	echo -e "\033[31;1m Exiting.. "
+	echo -e "\033[31;1m Invalid input Exiting.. "
 	exit 1 
 fi
 
