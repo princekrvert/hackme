@@ -32,6 +32,29 @@ echo -e "\e[30;1m Instagram : https://instagram.com/princekrvert \n Facebook : h
 banner(){
 echo -e "This is demo banner "	
 }
+# make a function to categoty .
+category(){
+clear 
+echo -e "\033[32;1m[1] \033[31;1m Forensics"
+echo -e "\033[32;1m[2] \033[31;1m Web exploitation"
+echo -e "\033[32;1m[3] \033[31;1m Reverse Engineering"
+echo -e "\033[32;1m[4] \033[31;1m Cryptography"
+echo -e "\033[32;1m[5] \033[31;1m Binary exploitation"
+read c_optn
+# now check the user option 
+if [[ $c_optn == "1" ]];then
+	echo "Forensics callled"
+elif [[ $c_optn == "2" ]];then 
+	echo "Web Exploitation called"
+elif [[ $c_optn == "3" ]];then 
+	echo "cryptography called"
+elif [[ $c_optn == "4" ]];then 
+	echo "Binary explotation called"
+else 
+	echo -ne "\033[31;1m Invalid option "
+	exit 1
+fi
+}
 # Now make a manue for the ctf 
 echo -ne "\033[32;1m[~] \033[0;1m Choose :"
 echo ""
@@ -45,7 +68,8 @@ read user_f
 if [[ $user_f == "1" ]];then
 	echo -e "\033[30;1m All called"
 elif [[ $user_f == "2" ]];then 
-	echo -e "\033[30;1m Category called"
+	# show to category to solve to the user
+	category
 elif [[ $user_f == "3" ]];then
 	echo -e "\033[30;1m Update "
 elif [[ $user_f == "4" ]];then
