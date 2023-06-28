@@ -9,15 +9,51 @@ user_inttrupt(){
 echo -e "\033[31;1m Exiting ctf tool.."
 exit 1
 }
+# Make a function to requirements 
+req(){
+# First check the os 
+os=$(uname -o)
+if [[ $os == "Android" ]];then
+	command -v go > /dev/null 2>&1 || { echo -e "\e[32;1m Installing golang "; pkg install golang -y ;}
+
+else
+	command -v go > /dev/null 2>&1 || { echo -e "\033;32;1m Installing golang "; sudo apt install golang -y ;}
+fi
+}
+# NOw call the requirements function 
+req 
 # Make a function for the About me 
 about_me(){
 echo -e "\e[32;1m Hi there , i am Prince Kumar a junior mechanical enginner. i am intrested in cyber security."
 echo -e "\e[32;1m Here is my social media links if you want to contact me."
-echo -e "\e[30;1m Instagram : https://instagram.com/princekrvert \n Facebook : https://facebook.com/princekrvet \n Telegram : t.me/princekrvert"
+echo -e "\e[30;1m Instagram : https://instagram.com/princekrvert \n Facebook : https://facebook.com/princekrvert \n Telegram : t.me/princekrvert"
 }
 # now make a banner for this tool 
 banner(){
 echo -e "This is demo banner "	
+}
+# make a function to categoty .
+category(){
+clear 
+echo -e "\033[32;1m[1] \033[31;1m Forensics"
+echo -e "\033[32;1m[2] \033[31;1m Web exploitation"
+echo -e "\033[32;1m[3] \033[31;1m Reverse Engineering"
+echo -e "\033[32;1m[4] \033[31;1m Cryptography"
+echo -e "\033[32;1m[5] \033[31;1m Binary exploitation"
+read c_optn
+# now check the user option 
+if [[ $c_optn == "1" ]];then
+	echo "Forensics callled"
+elif [[ $c_optn == "2" ]];then 
+	echo "Web Exploitation called"
+elif [[ $c_optn == "3" ]];then 
+	echo "cryptography called"
+elif [[ $c_optn == "4" ]];then 
+	echo "Binary explotation called"
+else 
+	echo -ne "\033[31;1m Invalid option "
+	exit 1
+fi
 }
 # Now make a manue for the ctf 
 echo -ne "\033[32;1m[~] \033[0;1m Choose :"
@@ -32,7 +68,8 @@ read user_f
 if [[ $user_f == "1" ]];then
 	echo -e "\033[30;1m All called"
 elif [[ $user_f == "2" ]];then 
-	echo -e "\033[30;1m Category called"
+	# show to category to solve to the user
+	category
 elif [[ $user_f == "3" ]];then
 	echo -e "\033[30;1m Update "
 elif [[ $user_f == "4" ]];then
@@ -40,7 +77,7 @@ elif [[ $user_f == "4" ]];then
 elif [[ $user_f == "5" ]];then 
 	echo -e "\033[30;1m Exit"
 else 
-	echo -e "\033[31;1m Exiting.. "
+	echo -e "\033[31;1m Invalid input Exiting.. "
 	exit 1 
 fi
 
