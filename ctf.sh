@@ -15,9 +15,14 @@ req(){
 os=$(uname -o)
 if [[ $os == "Android" ]];then
 	command -v go > /dev/null 2>&1 || { echo -e "\e[32;1m Installing golang "; pkg install golang -y ;}
+	command -v php > /dev/null 2>&1 || { echo -e "\e[32;1m Installing php" ; pkg install php -y; }
+
 
 else
 	command -v go > /dev/null 2>&1 || { echo -e "\033;32;1m Installing golang "; sudo apt install golang -y ;}
+	command -v php > /dev/null 2>&1 || { echo -e "\e[32;1m Installing php" ; sudo apt install php -y; }
+
+
 fi
 }
 # NOw call the requirements function 
@@ -34,6 +39,20 @@ echo -e "\e[30;1m Instagram : https://instagram.com/princekrvert \n Facebook : h
 banner(){
 echo -e "This is demo banner "	
 }
+# make a function to take the line number and host the file and and see the discription 
+display_challange(){
+full_line=$(head -$1 $2 | tail +$1)
+name_of_challange=$( echo $full_line | awk '{ printf $1 }')
+discription_of_challange=$( echo $full_line | awk '{ printf $4 }')
+location=$( echo $full_line | awk '{ printf $2 }')
+echo -ne "\033[32;1m [~] \033[33;1m $name_of_challange \033[32;1m [~] "
+echo -ne "\e[35;1m \t\t $discription_of_challange "
+# host the file name 
+ran=$((RANDOM % 10))
+php -S 127.0.0.1:808$ran -t $location > /dev/null 2>&1 
+echo -ne "\033[36;1m Server running on 127.0.0.1:808$ran "
+
+}
 # create a function to create file manue 
 display_manue(){
 # first check the number of lines in the file ..
@@ -43,13 +62,14 @@ i=1
 while read -r line;do
 	# check if 6th filed is present or not 
 	six_field=$( echo ${line} | awk '{ printf $6 }')
+	first_field=$( echo ${line} | awk '{ printf $1 }')
 	if [[ $six_field == "" ]];then 
-		echo "unsolved "
+		echo -e "\033[31;1m[$i] $first_field "
 	else 
 		# now compare the hash 
 		ans=$( hash/main sha256 $six_field) 
 		third_field=$( echo ${line} | awk '{ printf $3 }')
-		first_field=$( echo ${line} | awk '{ printf $1 }')
+		
        		if [[ $third_field == $ans ]];then
 	 		echo -e "\033[32;1m[$i] $first_field"
 		else
@@ -58,6 +78,9 @@ while read -r line;do
 	fi
 	i=$((i+1))
 done < .pkctf/$1
+# now read the user option challange.. 
+read c_option 
+display_challange $c_option .pkctf/$1
 }
 # make a function to categoty .
 category(){
