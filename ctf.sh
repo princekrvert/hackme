@@ -45,12 +45,25 @@ full_line=$(head -$1 $2 | tail +$1)
 name_of_challange=$( echo $full_line | awk '{ printf $1 }')
 discription_of_challange=$( echo $full_line | awk '{ printf $4 }')
 location=$( echo $full_line | awk '{ printf $2 }')
-echo -ne "\033[32;1m [~] \033[33;1m $name_of_challange \033[32;1m [~] "
-echo -ne "\e[35;1m \t\t $discription_of_challange "
+echo -ne "\033[32;1m [~] \033[33;1m $name_of_challange \033[32;1m [~] \n"
+echo -e "\e[35;1m $discription_of_challange "
 # host the file name 
 ran=$((RANDOM % 10))
-php -S 127.0.0.1:808$ran -t $location > /dev/null 2>&1 
-echo -ne "\033[36;1m Server running on 127.0.0.1:808$ran "
+php -S 127.0.0.1:8${ran}6${ran} -t $location > /dev/null 2>&1 & sleep 5
+echo -ne "\033[36;1m Server running on http://127.0.0.1:8${ran}6${ran} "
+read u_ans 
+# now check for the user ans ..
+third_field=$( echo $full_line | awk '{ printf $3 }')
+ans_given=$(./hash/main sha256 $u_ans)
+
+if [[ $third_field == $ans_given ]];then 
+	# now place the ans into six field 
+	
+else 
+	echo -e " Wrong ans restrating the menu"
+	display_manue
+	
+fi
 
 }
 # create a function to create file manue 
