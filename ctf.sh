@@ -58,7 +58,7 @@ ans_given=$(./hash/main sha256 $u_ans)
 
 if [[ $third_field == $ans_given ]];then 
 	# now place the ans into six field 
-	
+	sed -e $1"s/.*/& ${u_ans}/" $2
 else 
 	echo -e " Wrong ans restrating the menu"
 	display_manue
