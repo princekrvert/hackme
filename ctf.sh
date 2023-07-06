@@ -34,6 +34,15 @@ echo -e "\e[32;1m Hi there , i am Prince Kumar a junior mechanical enginner. i a
 echo -e "\e[32;1m Here is my social media links if you want to contact me."
 echo -e "\e[30;1m Instagram : https://instagram.com/princekrvert \n Facebook : https://facebook.com/princekrvert \n Telegram : t.me/princekrvert"
 }
+# make a function to remove the wrong ans from the six field ....
+remove_w_ans(){
+# let suppose $1 file name and $2 is the line number 
+f_line=$(head -$2 $1 | tail +$2)
+six_field=$( echo $f_line | awk '{ printf $6 }')
+# now remove the this text form that line use sed to do that 
+sed -i -e $2"s/${six_field}/ /" $1
+
+}
 
 # now make a banner for this tool 
 banner(){
@@ -49,8 +58,10 @@ echo -ne "\033[32;1m [~] \033[33;1m $name_of_challange \033[32;1m [~] \n"
 echo -e "\e[35;1m $discription_of_challange "
 # host the file name 
 ran=$((RANDOM % 10))
+echo -e "\033[35;1m Starting the server please wait"
 php -S 127.0.0.1:8${ran}6${ran} -t $location > /dev/null 2>&1 & sleep 5
 echo -ne "\033[36;1m Server running on http://127.0.0.1:8${ran}6${ran} "
+echo -ne "\033[32;1m Your answer: "
 read u_ans 
 # now check for the user ans ..
 third_field=$( echo $full_line | awk '{ printf $3 }')
@@ -61,7 +72,8 @@ if [[ $third_field == $ans_given ]];then
 	sed -e $1"s/.*/& ${u_ans}/" $2
 else 
 	echo -e " Wrong ans restrating the menu"
-	display_manue
+	sleep 2
+	category 
 	
 fi
 
@@ -87,6 +99,9 @@ while read -r line;do
 	 		echo -e "\033[32;1m[$i] $first_field"
 		else
 			echo -e "\033[31;1m[$i] $first_field "
+			# now remove the wrong ans ...
+			remove_w_ans .pkctf/$1 $i
+
 		fi		
 	fi
 	i=$((i+1))
