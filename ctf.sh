@@ -27,6 +27,19 @@ fi
 }
 # NOw call the requirements function 
 req 
+# make a function to generate the hash according to the system..
+gen_hash(){
+if [[ -f hash/main ]];then
+	echo -ne ""
+else
+	echo -e "\033[32;1m Generating some require binary files.."
+	c_dir=$(pwd)
+	cd hash 
+	go build main.go 
+	cd $c_dir
+fi
+}
+gen_hash
 #make a fuction if all is called 
 all_c(){
 # copy the all challange and make a temprory file to store  the output.. 
@@ -81,7 +94,7 @@ ans_given=$(./hash/main sha256 $u_ans)
 
 if [[ $third_field == $ans_given ]];then 
 	# now place the ans into six field 
-	sed -e $1"s/.*/& ${u_ans}/" $2
+	sed -i -e $1"s/.*/& ${u_ans}/" $2
 else 
 	echo -e " Wrong ans restrating the menu"
 	sleep 2
