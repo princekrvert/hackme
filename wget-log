@@ -1,7 +1,0 @@
---2023-07-04 14:09:42--  http://127.0.0.1:8060/exifchallange1.jpg
-Connecting to 127.0.0.1:8060... connected.
-HTTP request sent, awaiting response... Read error (Connection reset by peer) in headers.
-Retrying.
-
---2023-07-04 14:38:42--  (try: 2)  http://127.0.0.1:8060/exifchallange1.jpg
-Connecting to 127.0.0.1:8060... failed: Connection refused.
