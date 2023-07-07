@@ -3,7 +3,7 @@
 <a href="https://is.gd/UQreTd"><img title="Made in INDIA" src="https://img.shields.io/badge/MADE%20IN-INDIA-SCRIPT?colorA=%23ff8100&colorB=%23017e40&colorC=%23ff0000&style=for-the-badge"></a>
 </p>
 <p>
-<a href="https://img.shields.io/badge/PRINCE-KUMAR-green" ><img  src="https://img.shields.io/badge/PRINCE-KUMAR-green"></a>  <a href="#" ><img  src="https://img.shields.io/badge/HackMe-ctf-red"></a>  <a href="#"><img src="https://img.shields.io/badge/MADE%20IN%20-BASH-yellow"></a></p>
+<a href="https://img.shields.io/badge/PRINCE-KUMAR-green" ><img  src="https://img.shields.io/badge/PRINCE-KUMAR-green"></a>  <a href="#" ><img  src="https://img.shields.io/badge/HackMe-CTF-red"></a>  <a href="#"><img src="https://img.shields.io/badge/MADE%20IN%20-BASH-yellow"></a></p>
 
 ![20220102_164132](https://github.com/princekrvert/hackme/assets/56459297/d1c76372-c98b-46e5-a93f-48855a8bf22a)
 
