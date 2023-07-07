@@ -5,7 +5,7 @@
 <p>
 <a href="https://img.shields.io/badge/PRINCE-KUMAR-green" ><img  src="https://img.shields.io/badge/PRINCE-KUMAR-green"></a>  <a href="#" ><img  src="https://img.shields.io/badge/HackMe-ctf-red"></a>  <a href="#"><img src="https://img.shields.io/badge/MADE%20IN%20-BASH-yellow"></a></p>
 
-![20220102_164132](https://user-images.githubusercontent.com/56459297/147874107-16f87388-f3e2-44bc-acd3-0c183197a48c.jpg)
+![20220102_164132](https://github.com/princekrvert/hackme/assets/56459297/d1c76372-c98b-46e5-a93f-48855a8bf22a)
 
 ## Termux installation 
 *`apt update && apt upgrade`
@@ -21,7 +21,7 @@
 *`bash ctf.sh`
 
 ### screenshot
- <img src="https://user-images.githubusercontent.com/56459297/147874707-c8ddb798-c9b0-4143-ae2f-d8313d2cb53c.jpg">
+ <img src="#">
  
  ### social media 
  <a href="https://www.instagram.com/princekrvert/"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
