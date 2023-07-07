@@ -27,7 +27,19 @@ fi
 }
 # NOw call the requirements function 
 req 
-
+#make a fuction if all is called 
+all_c(){
+# copy the all challange and make a temprory file to store  the output.. 
+# first remove the old file if present ..
+if [[ -f .pkctf/all ]];then 
+	rm -rf .pkctf/all
+else
+	# no file is present.. 
+	echo -ne " " 
+fi
+cat .pkctf/* > .pkctf/all
+display_manue all
+}
 # Make a function for the About me 
 about_me(){
 echo -e "\e[32;1m Hi there , i am Prince Kumar a junior mechanical enginner. i am intrested in cyber security."
@@ -60,7 +72,7 @@ echo -e "\e[35;1m $discription_of_challange "
 ran=$((RANDOM % 10))
 echo -e "\033[35;1m Starting the server please wait"
 php -S 127.0.0.1:8${ran}6${ran} -t $location > /dev/null 2>&1 & sleep 5
-echo -ne "\033[36;1m Server running on http://127.0.0.1:8${ran}6${ran} "
+echo -e "\033[36;1m Server running on http://127.0.0.1:8${ran}6${ran} 
 echo -ne "\033[32;1m Your answer: "
 read u_ans 
 # now check for the user ans ..
@@ -120,7 +132,7 @@ echo -e "\033[32;1m[4] \033[31;1m Cryptography"
 echo -e "\033[32;1m[5] \033[31;1m Binary exploitation"
 echo -e "\033[32;1m[6] \033[31;1m Previous manue"
 read c_optn
-# now check the user option 
+# now check the user option I
 if [[ $c_optn == "1" ]];then
 	if [[ -f .pkctf/forensic ]];then
 		# now disply the manue 
@@ -129,7 +141,11 @@ if [[ $c_optn == "1" ]];then
 		echo "file not found"
 	fi
 elif [[ $c_optn == "2" ]];then 
-	echo "Web Exploitation called"
+	if [[ -f .pkctf/web ]];then
+		display_manue web
+	else
+		echo "file not found update the tool"
+	fi
 elif [[ $c_optn == "3" ]];then 
 	echo "reverse Engineering"
 elif [[ $c_optn == "4" ]];then 
@@ -161,7 +177,7 @@ echo -e "\033[35;1m[5] \033[33;0m Exit"
 # NOw read the answer form the user
 read user_f
 if [[ $user_f == "1" ]];then
-	echo -e "\033[30;1m All called"
+	all_c
 elif [[ $user_f == "2" ]];then 
 	# show to category to solve to the user
 	category
