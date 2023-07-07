@@ -21,7 +21,7 @@
 *`bash ctf.sh`
 
 ### screenshot
- <img src="https://github.com/princekrvert/hackme/assets/56459297/db050002-b0fc-4c23-bc7f-37af3af01299">
+ <img width="100%" height="500" src="https://github.com/princekrvert/hackme/assets/56459297/db050002-b0fc-4c23-bc7f-37af3af01299">
  
  ### social media 
  <a href="https://www.instagram.com/princekrvert/"> <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
