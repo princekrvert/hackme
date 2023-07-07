@@ -72,7 +72,7 @@ echo -e "\e[35;1m $discription_of_challange "
 ran=$((RANDOM % 10))
 echo -e "\033[35;1m Starting the server please wait"
 php -S 127.0.0.1:8${ran}6${ran} -t $location > /dev/null 2>&1 & sleep 5
-echo -e "\033[36;1m Server running on http://127.0.0.1:8${ran}6${ran} 
+echo -e "\033[36;1m Server running on http://127.0.0.1:8${ran}6${ran} "
 echo -ne "\033[32;1m Your answer: "
 read u_ans 
 # now check for the user ans ..
