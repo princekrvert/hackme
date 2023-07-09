@@ -1,0 +1,1626 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        
+        
+        
+        <meta charset="utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"1e7946724e",applicationID:"31671751"};;/*! For license information please see nr-loader-rum-1.236.0.min.js.LICENSE.txt */
+(()=>{"use strict";var e,t,n={5763:(e,t,n)=>{n.d(t,{P_:()=>f,Mt:()=>p,C5:()=>s,DL:()=>m,OP:()=>_,lF:()=>E,Yu:()=>y,Dg:()=>g,CX:()=>c,GE:()=>b,sU:()=>j});var r=n(8632),i=n(9567);const o={beacon:r.ce.beacon,errorBeacon:r.ce.errorBeacon,licenseKey:void 0,applicationID:void 0,sa:void 0,queueTime:void 0,applicationTime:void 0,ttGuid:void 0,user:void 0,account:void 0,product:void 0,extra:void 0,jsAttributes:{},userAttributes:void 0,atts:void 0,transactionName:void 0,tNamePlain:void 0},a={};function s(e){if(!e)throw new Error("All info objects require an agent identifier!");if(!a[e])throw new Error("Info for ".concat(e," was never set"));return a[e]}function c(e,t){if(!e)throw new Error("All info objects require an agent identifier!");a[e]=(0,i.D)(t,o),(0,r.Qy)(e,a[e],"info")}var d=n(7056);const u=()=>{const e={blockSelector:"[data-nr-block]",maskInputOptions:{password:!0}};return{allow_bfcache:!0,privacy:{cookies_enabled:!0},ajax:{deny_list:void 0,enabled:!0,harvestTimeSeconds:10},distributed_tracing:{enabled:void 0,exclude_newrelic_header:void 0,cors_use_newrelic_header:void 0,cors_use_tracecontext_headers:void 0,allowed_origins:void 0},session:{domain:void 0,expiresMs:d.oD,inactiveMs:d.Hb},ssl:void 0,obfuscate:void 0,jserrors:{enabled:!0,harvestTimeSeconds:10},metrics:{enabled:!0},page_action:{enabled:!0,harvestTimeSeconds:30},page_view_event:{enabled:!0},page_view_timing:{enabled:!0,harvestTimeSeconds:30,long_task:!1},session_trace:{enabled:!0,harvestTimeSeconds:10},harvest:{tooManyRequestsDelay:60},session_replay:{enabled:!1,harvestTimeSeconds:60,sampleRate:.1,errorSampleRate:.1,maskTextSelector:"*",maskAllInputs:!0,get blockClass(){return"nr-block"},get ignoreClass(){return"nr-ignore"},get maskTextClass(){return"nr-mask"},get blockSelector(){return e.blockSelector},set blockSelector(t){e.blockSelector+=",".concat(t)},get maskInputOptions(){return e.maskInputOptions},set maskInputOptions(t){e.maskInputOptions={...t,password:!0}}},spa:{enabled:!0,harvestTimeSeconds:10}}},l={};function f(e){if(!e)throw new Error("All configuration objects require an agent identifier!");if(!l[e])throw new Error("Configuration for ".concat(e," was never set"));return l[e]}function g(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");l[e]=(0,i.D)(t,u()),(0,r.Qy)(e,l[e],"config")}function p(e,t){if(!e)throw new Error("All configuration objects require an agent identifier!");var n=f(e);if(n){for(var r=t.split("."),i=0;i<r.length-1;i++)if("object"!=typeof(n=n[r[i]]))return;n=n[r[r.length-1]]}return n}const h={accountID:void 0,trustKey:void 0,agentID:void 0,licenseKey:void 0,applicationID:void 0,xpid:void 0},v={};function m(e){if(!e)throw new Error("All loader-config objects require an agent identifier!");if(!v[e])throw new Error("LoaderConfig for ".concat(e," was never set"));return v[e]}function b(e,t){if(!e)throw new Error("All loader-config objects require an agent identifier!");v[e]=(0,i.D)(t,h),(0,r.Qy)(e,v[e],"loader_config")}const y=(0,r.mF)().o;var w=n(385),A=n(6818);const x={buildEnv:A.Re,bytesSent:{},queryBytesSent:{},customTransaction:void 0,disabled:!1,distMethod:A.gF,isolatedBacklog:!1,loaderType:void 0,maxBytes:3e4,offset:Math.floor(w._A?.performance?.timeOrigin||w._A?.performance?.timing?.navigationStart||Date.now()),onerror:void 0,origin:""+w._A.location,ptid:void 0,releaseIds:{},session:void 0,xhrWrappable:"function"==typeof w._A.XMLHttpRequest?.prototype?.addEventListener,version:A.q4},D={};function _(e){if(!e)throw new Error("All runtime objects require an agent identifier!");if(!D[e])throw new Error("Runtime for ".concat(e," was never set"));return D[e]}function j(e,t){if(!e)throw new Error("All runtime objects require an agent identifier!");D[e]=(0,i.D)(t,x),(0,r.Qy)(e,D[e],"runtime")}function E(e){return function(e){try{const t=s(e);return!!t.licenseKey&&!!t.errorBeacon&&!!t.applicationID}catch(e){return!1}}(e)}},9567:(e,t,n)=>{n.d(t,{D:()=>i});var r=n(50);function i(e,t){try{if(!e||"object"!=typeof e)return(0,r.Z)("Setting a Configurable requires an object as input");if(!t||"object"!=typeof t)return(0,r.Z)("Setting a Configurable requires a model to set its initial properties");const n=Object.create(Object.getPrototypeOf(t),Object.getOwnPropertyDescriptors(t)),o=0===Object.keys(n).length?e:n;for(let a in o)if(void 0!==e[a])try{"object"==typeof e[a]&&"object"==typeof t[a]?n[a]=i(e[a],t[a]):n[a]=e[a]}catch(e){(0,r.Z)("An error occurred while setting a property of a Configurable",e)}return n}catch(e){(0,r.Z)("An error occured while setting a Configurable",e)}}},6818:(e,t,n)=>{n.d(t,{Re:()=>i,gF:()=>o,q4:()=>r});const r="1.236.0",i="PROD",o="CDN"},385:(e,t,n)=>{n.d(t,{FN:()=>a,IF:()=>d,Nk:()=>l,Tt:()=>s,_A:()=>o,il:()=>r,pL:()=>c,v6:()=>i,w1:()=>u});const r="undefined"!=typeof window&&!!window.document,i="undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self.navigator instanceof WorkerNavigator||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis.navigator instanceof WorkerNavigator),o=r?window:"undefined"!=typeof WorkerGlobalScope&&("undefined"!=typeof self&&self instanceof WorkerGlobalScope&&self||"undefined"!=typeof globalThis&&globalThis instanceof WorkerGlobalScope&&globalThis),a=""+o?.location,s=/iPad|iPhone|iPod/.test(navigator.userAgent),c=s&&"undefined"==typeof SharedWorker,d=(()=>{const e=navigator.userAgent.match(/Firefox[/\s](\d+\.\d+)/);return Array.isArray(e)&&e.length>=2?+e[1]:0})(),u=Boolean(r&&window.document.documentMode),l=!!navigator.sendBeacon},1117:(e,t,n)=>{n.d(t,{w:()=>o});var r=n(50);const i={agentIdentifier:"",ee:void 0};class o{constructor(e){try{if("object"!=typeof e)return(0,r.Z)("shared context requires an object as input");this.sharedContext={},Object.assign(this.sharedContext,i),Object.entries(e).forEach((e=>{let[t,n]=e;Object.keys(i).includes(t)&&(this.sharedContext[t]=n)}))}catch(e){(0,r.Z)("An error occured while setting SharedContext",e)}}}},8e3:(e,t,n)=>{n.d(t,{L:()=>u,R:()=>c});var r=n(2177),i=n(1284),o=n(4322),a=n(3325);const s={};function c(e,t){const n={staged:!1,priority:a.p[t]||0};d(e),s[e].get(t)||s[e].set(t,n)}function d(e){e&&(s[e]||(s[e]=new Map))}function u(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:"",t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:"feature";if(d(e),!e||!s[e].get(t))return a(t);s[e].get(t).staged=!0;const n=[...s[e]];function a(t){const n=e?r.ee.get(e):r.ee,a=o.X.handlers;if(n.backlog&&a){var s=n.backlog[t],c=a[t];if(c){for(var d=0;s&&d<s.length;++d)l(s[d],c);(0,i.D)(c,(function(e,t){(0,i.D)(t,(function(t,n){n[0].on(e,n[1])}))}))}delete a[t],n.backlog[t]=null,n.emit("drain-"+t,[])}}n.every((e=>{let[t,n]=e;return n.staged}))&&(n.sort(((e,t)=>e[1].priority-t[1].priority)),n.forEach((e=>{let[t]=e;a(t)})))}function l(e,t){var n=e[1];(0,i.D)(t[n],(function(t,n){var r=e[0];if(n[0]===r){var i=n[1],o=e[3],a=e[2];i.apply(o,a)}}))}},2177:(e,t,n)=>{n.d(t,{ee:()=>d});var r=n(8632),i=n(2210),o=n(1284),a=n(5763),s="nr@context";let c=(0,r.fP)();var d;function u(){}function l(){return new u}function f(){d.aborted=!0,d.backlog={}}c.ee?d=c.ee:(d=function e(t,n){var r={},c={},g={},p=!1;try{p=16===n.length&&(0,a.OP)(n).isolatedBacklog}catch(e){}var h={on:b,addEventListener:b,removeEventListener:y,emit:m,get:A,listeners:w,context:v,buffer:x,abort:f,aborted:!1,isBuffering:D,debugId:n,backlog:p?{}:t&&"object"==typeof t.backlog?t.backlog:{}};return h;function v(e){return e&&e instanceof u?e:e?(0,i.X)(e,s,l):l()}function m(e,n,r,i,o){if(!1!==o&&(o=!0),!d.aborted||i){t&&o&&t.emit(e,n,r);for(var a=v(r),s=w(e),u=s.length,l=0;l<u;l++)s[l].apply(a,n);var f=_()[c[e]];return f&&f.push([h,e,n,a]),a}}function b(e,t){r[e]=w(e).concat(t)}function y(e,t){var n=r[e];if(n)for(var i=0;i<n.length;i++)n[i]===t&&n.splice(i,1)}function w(e){return r[e]||[]}function A(t){return g[t]=g[t]||e(h,t)}function x(e,t){var n=_();h.aborted||(0,o.D)(e,(function(e,r){t=t||"feature",c[r]=t,t in n||(n[t]=[])}))}function D(e){return!!_()[c[e]]}function _(){return h.backlog}}(void 0,"globalEE"),c.ee=d)},5546:(e,t,n)=>{n.d(t,{E:()=>r,p:()=>i});var r=n(2177).ee.get("handle");function i(e,t,n,i,o){o?(o.buffer([e],i),o.emit(e,t,n)):(r.buffer([e],i),r.emit(e,t,n))}},4322:(e,t,n)=>{n.d(t,{X:()=>o});var r=n(5546);o.on=a;var i=o.handlers={};function o(e,t,n,o){a(o||r.E,i,e,t,n)}function a(e,t,n,i,o){o||(o="feature"),e||(e=r.E);var a=t[o]=t[o]||{};(a[n]=a[n]||[]).push([e,i])}},3239:(e,t,n)=>{n.d(t,{bP:()=>s,iz:()=>c,m$:()=>a});var r=n(385);let i=!1,o=!1;try{const e={get passive(){return i=!0,!1},get signal(){return o=!0,!1}};r._A.addEventListener("test",null,e),r._A.removeEventListener("test",null,e)}catch(e){}function a(e,t){return i||o?{capture:!!e,passive:i,signal:t}:!!e}function s(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;window.addEventListener(e,t,a(n,r))}function c(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2],r=arguments.length>3?arguments[3]:void 0;document.addEventListener(e,t,a(n,r))}},4402:(e,t,n)=>{n.d(t,{Rl:()=>a,ky:()=>s});var r=n(385);const i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx";function o(e,t){return e?15&e[t]:16*Math.random()|0}function a(){const e=r._A?.crypto||r._A?.msCrypto;let t,n=0;return e&&e.getRandomValues&&(t=e.getRandomValues(new Uint8Array(31))),i.split("").map((e=>"x"===e?o(t,++n).toString(16):"y"===e?(3&o()|8).toString(16):e)).join("")}function s(e){const t=r._A?.crypto||r._A?.msCrypto;let n,i=0;t&&t.getRandomValues&&(n=t.getRandomValues(new Uint8Array(31)));const a=[];for(var s=0;s<e;s++)a.push(o(n,++i).toString(16));return a.join("")}},7056:(e,t,n)=>{n.d(t,{Bq:()=>r,Hb:()=>o,oD:()=>i});const r="NRBA",i=144e5,o=18e5},7894:(e,t,n)=>{function r(){return Math.round(performance.now())}n.d(t,{z:()=>r})},50:(e,t,n)=>{function r(e,t){"function"==typeof console.warn&&(console.warn("New Relic: ".concat(e)),t&&console.warn(t))}n.d(t,{Z:()=>r})},2587:(e,t,n)=>{n.d(t,{N:()=>c,T:()=>d});var r=n(2177),i=n(5546),o=n(8e3),a=n(3325);const s={stn:[a.D.sessionTrace],err:[a.D.jserrors,a.D.metrics],ins:[a.D.pageAction],spa:[a.D.spa],sr:[a.D.sessionReplay,a.D.sessionTrace]};function c(e,t){const n=r.ee.get(t);e&&"object"==typeof e&&(Object.entries(e).forEach((e=>{let[t,r]=e;void 0===d[t]&&(s[t]?s[t].forEach((e=>{r?(0,i.p)("feat-"+t,[],void 0,e,n):(0,i.p)("block-"+t,[],void 0,e,n),(0,i.p)("rumresp-"+t,[Boolean(r)],void 0,e,n)})):r&&(0,i.p)("feat-"+t,[],void 0,void 0,n),d[t]=Boolean(r))})),Object.keys(s).forEach((e=>{void 0===d[e]&&(s[e]?.forEach((t=>(0,i.p)("rumresp-"+e,[!1],void 0,t,n))),d[e]=!1)})),(0,o.L)(t,a.D.pageViewEvent))}const d={}},2210:(e,t,n)=>{n.d(t,{X:()=>i});var r=Object.prototype.hasOwnProperty;function i(e,t,n){if(r.call(e,t))return e[t];var i=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:i,writable:!0,enumerable:!1}),i}catch(e){}return e[t]=i,i}},1284:(e,t,n)=>{n.d(t,{D:()=>r});const r=(e,t)=>Object.entries(e||{}).map((e=>{let[n,r]=e;return t(n,r)}))},4351:(e,t,n)=>{n.d(t,{P:()=>o});var r=n(2177);const i=()=>{const e=new WeakSet;return(t,n)=>{if("object"==typeof n&&null!==n){if(e.has(n))return;e.add(n)}return n}};function o(e){try{return JSON.stringify(e,i())}catch(e){try{r.ee.emit("internal-error",[e])}catch(e){}}}},3960:(e,t,n)=>{n.d(t,{K:()=>a,b:()=>o});var r=n(3239);function i(){return"undefined"==typeof document||"complete"===document.readyState}function o(e,t){if(i())return e();(0,r.bP)("load",e,t)}function a(e){if(i())return e();(0,r.iz)("DOMContentLoaded",e)}},8632:(e,t,n)=>{n.d(t,{EZ:()=>d,Qy:()=>c,ce:()=>o,fP:()=>a,gG:()=>u,mF:()=>s});var r=n(7894),i=n(385);const o={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net"};function a(){return i._A.NREUM||(i._A.NREUM={}),void 0===i._A.newrelic&&(i._A.newrelic=i._A.NREUM),i._A.NREUM}function s(){let e=a();return e.o||(e.o={ST:i._A.setTimeout,SI:i._A.setImmediate,CT:i._A.clearTimeout,XHR:i._A.XMLHttpRequest,REQ:i._A.Request,EV:i._A.Event,PR:i._A.Promise,MO:i._A.MutationObserver,FETCH:i._A.fetch}),e}function c(e,t,n){let i=a();const o=i.initializedAgents||{},s=o[e]||{};return Object.keys(s).length||(s.initializedAt={ms:(0,r.z)(),date:new Date}),i.initializedAgents={...o,[e]:{...s,[n]:t}},i}function d(e,t){a()[e]=t}function u(){return function(){let e=a();const t=e.info||{};e.info={beacon:o.beacon,errorBeacon:o.errorBeacon,...t}}(),function(){let e=a();const t=e.init||{};e.init={...t}}(),s(),function(){let e=a();const t=e.loader_config||{};e.loader_config={...t}}(),a()}},7956:(e,t,n)=>{n.d(t,{N:()=>i});var r=n(3239);function i(e){let t=arguments.length>1&&void 0!==arguments[1]&&arguments[1],n=arguments.length>2?arguments[2]:void 0,i=arguments.length>3?arguments[3]:void 0;return void(0,r.iz)("visibilitychange",(function(){if(t)return void("hidden"==document.visibilityState&&e());e(document.visibilityState)}),n,i)}},3081:(e,t,n)=>{n.d(t,{gF:()=>o,mY:()=>i,t9:()=>r,vz:()=>s,xS:()=>a});const r=n(3325).D.metrics,i="sm",o="cm",a="storeSupportabilityMetrics",s="storeEventMetrics"},7633:(e,t,n)=>{n.d(t,{Dz:()=>i,OJ:()=>a,qw:()=>o,t9:()=>r});const r=n(3325).D.pageViewEvent,i="firstbyte",o="domcontent",a="windowload"},9251:(e,t,n)=>{n.d(t,{t:()=>r});const r=n(3325).D.pageViewTiming},5938:(e,t,n)=>{n.d(t,{W:()=>o});var r=n(5763),i=n(2177);class o{constructor(e,t,n){this.agentIdentifier=e,this.aggregator=t,this.ee=i.ee.get(e,(0,r.OP)(this.agentIdentifier).isolatedBacklog),this.featureName=n,this.blocked=!1}}},9144:(e,t,n)=>{n.d(t,{j:()=>v});var r=n(3325),i=n(5763),o=n(5546),a=n(2177),s=n(7894),c=n(8e3),d=n(3960),u=n(385),l=n(50),f=n(3081),g=n(8632);function p(){const e=(0,g.gG)();["setErrorHandler","finished","addToTrace","inlineHit","addRelease","addPageAction","setCurrentRouteName","setPageViewName","setCustomAttribute","interaction","noticeError","setUserId"].forEach((t=>{e[t]=function(){for(var n=arguments.length,r=new Array(n),i=0;i<n;i++)r[i]=arguments[i];return function(t){for(var n=arguments.length,r=new Array(n>1?n-1:0),i=1;i<n;i++)r[i-1]=arguments[i];let o=[];return Object.values(e.initializedAgents).forEach((e=>{e.exposed&&e.api[t]&&o.push(e.api[t](...r))})),o.length>1?o:o[0]}(t,...r)}}))}var h=n(2587);function v(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{},v=arguments.length>2?arguments[2]:void 0,m=arguments.length>3?arguments[3]:void 0,{init:b,info:y,loader_config:w,runtime:A={loaderType:v},exposed:x=!0}=t;const D=(0,g.gG)();y||(b=D.init,y=D.info,w=D.loader_config),(0,i.Dg)(e,b||{}),(0,i.GE)(e,w||{}),(0,i.sU)(e,A),y.jsAttributes??={},u.v6&&(y.jsAttributes.isWorker=!0),(0,i.CX)(e,y),p();const _=function(e,t){t||(0,c.R)(e,"api");const g={};var p=a.ee.get(e),h=p.get("tracer"),v="api-",m=v+"ixn-";function b(t,n,r,o){const a=(0,i.C5)(e);return null===n?delete a.jsAttributes[t]:(0,i.CX)(e,{...a,jsAttributes:{...a.jsAttributes,[t]:n}}),A(v,r,!0,o||null===n?"session":void 0)(t,n)}function y(){}["setErrorHandler","finished","addToTrace","inlineHit","addRelease"].forEach((e=>g[e]=A(v,e,!0,"api"))),g.addPageAction=A(v,"addPageAction",!0,r.D.pageAction),g.setCurrentRouteName=A(v,"routeName",!0,r.D.spa),g.setPageViewName=function(t,n){if("string"==typeof t)return"/"!==t.charAt(0)&&(t="/"+t),(0,i.OP)(e).customTransaction=(n||"http://custom.transaction")+t,A(v,"setPageViewName",!0)()},g.setCustomAttribute=function(e,t){let n=arguments.length>2&&void 0!==arguments[2]&&arguments[2];if("string"==typeof e){if(["string","number"].includes(typeof t)||null===t)return b(e,t,"setCustomAttribute",n);(0,l.Z)("Failed to execute setCustomAttribute.\nNon-null value must be a string or number type, but a type of <".concat(typeof t,"> was provided."))}else(0,l.Z)("Failed to execute setCustomAttribute.\nName must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.setUserId=function(e){if("string"==typeof e||null===e)return b("enduser.id",e,"setUserId",!0);(0,l.Z)("Failed to execute setUserId.\nNon-null value must be a string type, but a type of <".concat(typeof e,"> was provided."))},g.interaction=function(){return(new y).get()};var w=y.prototype={createTracer:function(e,t){var n={},i=this,a="function"==typeof t;return(0,o.p)(m+"tracer",[(0,s.z)(),e,n],i,r.D.spa,p),function(){if(h.emit((a?"":"no-")+"fn-start",[(0,s.z)(),i,a],n),a)try{return t.apply(this,arguments)}catch(e){throw h.emit("fn-err",[arguments,this,"string"==typeof e?new Error(e):e],n),e}finally{h.emit("fn-end",[(0,s.z)()],n)}}}};function A(e,t,n,i){return function(){return(0,o.p)(f.xS,["API/"+t+"/called"],void 0,r.D.metrics,p),i&&(0,o.p)(e+t,[(0,s.z)(),...arguments],n?null:this,i,p),n?void 0:this}}function x(){n.e(439).then(n.bind(n,7438)).then((t=>{let{setAPI:n}=t;n(e),(0,c.L)(e,"api")})).catch((()=>(0,l.Z)("Downloading runtime APIs failed...")))}return["actionText","setName","setAttribute","save","ignore","onEnd","getContext","end","get"].forEach((e=>{w[e]=A(m,e,void 0,r.D.spa)})),g.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),(0,o.p)(f.xS,["API/noticeError/called"],void 0,r.D.metrics,p),(0,o.p)("err",[e,(0,s.z)(),!1,t],void 0,r.D.jserrors,p)},u.il?(0,d.b)((()=>x()),!0):x(),g}(e,m);return(0,g.Qy)(e,_,"api"),(0,g.Qy)(e,x,"exposed"),(0,g.EZ)("activatedFeatures",h.T),_}},3325:(e,t,n)=>{n.d(t,{D:()=>r,p:()=>i});const r={ajax:"ajax",jserrors:"jserrors",metrics:"metrics",pageAction:"page_action",pageViewEvent:"page_view_event",pageViewTiming:"page_view_timing",sessionReplay:"session_replay",sessionTrace:"session_trace",spa:"spa"},i={[r.pageViewEvent]:1,[r.pageViewTiming]:2,[r.metrics]:3,[r.jserrors]:4,[r.ajax]:5,[r.sessionTrace]:6,[r.pageAction]:7,[r.spa]:8,[r.sessionReplay]:9}}},r={};function i(e){var t=r[e];if(void 0!==t)return t.exports;var o=r[e]={exports:{}};return n[e](o,o.exports,i),o.exports}i.m=n,i.d=(e,t)=>{for(var n in t)i.o(t,n)&&!i.o(e,n)&&Object.defineProperty(e,n,{enumerable:!0,get:t[n]})},i.f={},i.e=e=>Promise.all(Object.keys(i.f).reduce(((t,n)=>(i.f[n](e,t),t)),[])),i.u=e=>(({78:"page_action-aggregate",147:"metrics-aggregate",242:"session-manager",317:"jserrors-aggregate",348:"page_view_timing-aggregate",412:"lazy-feature-loader",439:"async-api",538:"recorder",590:"session_replay-aggregate",675:"compressor",733:"session_trace-aggregate",786:"page_view_event-aggregate",873:"spa-aggregate",898:"ajax-aggregate"}[e]||e)+"."+{78:"ac76d497",147:"3dc53903",148:"1a20d5fe",242:"2a64278a",317:"49e41428",348:"bd6de33a",412:"2f55ce66",439:"30bd804e",538:"1b18459f",590:"cf0efb30",675:"ae9f91a8",733:"83105561",786:"06482edd",860:"03a8b7a5",873:"e6b09d52",898:"998ef92b"}[e]+"-1.236.0.min.js"),i.o=(e,t)=>Object.prototype.hasOwnProperty.call(e,t),e={},t="NRBA:",i.l=(n,r,o,a)=>{if(e[n])e[n].push(r);else{var s,c;if(void 0!==o)for(var d=document.getElementsByTagName("script"),u=0;u<d.length;u++){var l=d[u];if(l.getAttribute("src")==n||l.getAttribute("data-webpack")==t+o){s=l;break}}s||(c=!0,(s=document.createElement("script")).charset="utf-8",s.timeout=120,i.nc&&s.setAttribute("nonce",i.nc),s.setAttribute("data-webpack",t+o),s.src=n),e[n]=[r];var f=(t,r)=>{s.onerror=s.onload=null,clearTimeout(g);var i=e[n];if(delete e[n],s.parentNode&&s.parentNode.removeChild(s),i&&i.forEach((e=>e(r))),t)return t(r)},g=setTimeout(f.bind(null,void 0,{type:"timeout",target:s}),12e4);s.onerror=f.bind(null,s.onerror),s.onload=f.bind(null,s.onload),c&&document.head.appendChild(s)}},i.r=e=>{"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},i.j=6,i.p="https://js-agent.newrelic.com/",(()=>{var e={6:0,352:0};i.f.j=(t,n)=>{var r=i.o(e,t)?e[t]:void 0;if(0!==r)if(r)n.push(r[2]);else{var o=new Promise(((n,i)=>r=e[t]=[n,i]));n.push(r[2]=o);var a=i.p+i.u(t),s=new Error;i.l(a,(n=>{if(i.o(e,t)&&(0!==(r=e[t])&&(e[t]=void 0),r)){var o=n&&("load"===n.type?"missing":n.type),a=n&&n.target&&n.target.src;s.message="Loading chunk "+t+" failed.\n("+o+": "+a+")",s.name="ChunkLoadError",s.type=o,s.request=a,r[1](s)}}),"chunk-"+t,t)}};var t=(t,n)=>{var r,o,[a,s,c]=n,d=0;if(a.some((t=>0!==e[t]))){for(r in s)i.o(s,r)&&(i.m[r]=s[r]);if(c)c(i)}for(t&&t(n);d<a.length;d++)o=a[d],i.o(e,o)&&e[o]&&e[o][0](),e[o]=0},n=window.webpackChunkNRBA=window.webpackChunkNRBA||[];n.forEach(t.bind(null,0)),n.push=t.bind(null,n.push.bind(n))})();var o={};(()=>{i.r(o);var e=i(3325),t=i(5763);const n=Object.values(e.D);function r(e){const r={};return n.forEach((n=>{r[n]=function(e,n){return!1!==(0,t.Mt)(n,"".concat(e,".enabled"))}(n,e)})),r}var a=i(9144);var s=i(5546),c=i(385),d=i(8e3),u=i(5938),l=i(3960),f=i(50);class g extends u.W{constructor(e,t,n){let r=!(arguments.length>3&&void 0!==arguments[3])||arguments[3];super(e,t,n),this.auto=r,this.abortHandler,this.featAggregate,this.onAggregateImported,r&&(0,d.R)(e,n)}importAggregator(){let e=arguments.length>0&&void 0!==arguments[0]?arguments[0]:{};if(this.featAggregate||!this.auto)return;const n=c.il&&!0===(0,t.Mt)(this.agentIdentifier,"privacy.cookies_enabled");let r;this.onAggregateImported=new Promise((e=>{r=e}));const o=async()=>{let t;try{if(n){const{setupAgentSession:e}=await Promise.all([i.e(860),i.e(242)]).then(i.bind(i,3228));t=e(this.agentIdentifier)}}catch(e){(0,f.Z)("A problem occurred when starting up session manager. This page will not start or extend any session.",e)}try{if(!this.shouldImportAgg(this.featureName,t))return void(0,d.L)(this.agentIdentifier,this.featureName);const{lazyFeatureLoader:n}=await i.e(412).then(i.bind(i,8582)),{Aggregate:o}=await n(this.featureName,"aggregate");this.featAggregate=new o(this.agentIdentifier,this.aggregator,e),r(!0)}catch(e){(0,f.Z)("Downloading and initializing ".concat(this.featureName," failed..."),e),this.abortHandler?.(),r(!1)}};c.il?(0,l.b)((()=>o()),!0):o()}shouldImportAgg(n,r){return n!==e.D.sessionReplay||!1!==(0,t.Mt)(this.agentIdentifier,"session_trace.enabled")&&(!!r?.isNew||!!r?.state.sessionReplay)}}var p=i(7633),h=i(7894);class v extends g{static featureName=p.t9;constructor(n,r){let i=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];if(super(n,r,p.t9,i),("undefined"==typeof PerformanceNavigationTiming||c.Tt)&&"undefined"!=typeof PerformanceTiming){const r=(0,t.OP)(n);r[p.Dz]=Math.max(Date.now()-r.offset,0),(0,l.K)((()=>r[p.qw]=Math.max((0,h.z)()-r[p.Dz],0))),(0,l.b)((()=>{const t=(0,h.z)();r[p.OJ]=Math.max(t-r[p.Dz],0),(0,s.p)("timing",["load",t],void 0,e.D.pageViewTiming,this.ee)}))}this.importAggregator()}}var m=i(1117),b=i(1284);class y extends m.w{constructor(e){super(e),this.aggregatedData={}}store(e,t,n,r,i){var o=this.getBucket(e,t,n,i);return o.metrics=function(e,t){t||(t={count:0});return t.count+=1,(0,b.D)(e,(function(e,n){t[e]=w(n,t[e])})),t}(r,o.metrics),o}merge(e,t,n,r,i){var o=this.getBucket(e,t,r,i);if(o.metrics){var a=o.metrics;a.count+=n.count,(0,b.D)(n,(function(e,t){if("count"!==e){var r=a[e],i=n[e];i&&!i.c?a[e]=w(i.t,r):a[e]=function(e,t){if(!t)return e;t.c||(t=A(t.t));return t.min=Math.min(e.min,t.min),t.max=Math.max(e.max,t.max),t.t+=e.t,t.sos+=e.sos,t.c+=e.c,t}(i,a[e])}}))}else o.metrics=n}storeMetric(e,t,n,r){var i=this.getBucket(e,t,n);return i.stats=w(r,i.stats),i}getBucket(e,t,n,r){this.aggregatedData[e]||(this.aggregatedData[e]={});var i=this.aggregatedData[e][t];return i||(i=this.aggregatedData[e][t]={params:n||{}},r&&(i.custom=r)),i}get(e,t){return t?this.aggregatedData[e]&&this.aggregatedData[e][t]:this.aggregatedData[e]}take(e){for(var t={},n="",r=!1,i=0;i<e.length;i++)t[n=e[i]]=x(this.aggregatedData[n]),t[n].length&&(r=!0),delete this.aggregatedData[n];return r?t:null}}function w(e,t){return null==e?function(e){e?e.c++:e={c:1};return e}(t):t?(t.c||(t=A(t.t)),t.c+=1,t.t+=e,t.sos+=e*e,e>t.max&&(t.max=e),e<t.min&&(t.min=e),t):{t:e}}function A(e){return{t:e,min:e,max:e,sos:e*e,c:1}}function x(e){return"object"!=typeof e?[]:(0,b.D)(e,D)}function D(e,t){return t}var _=i(8632),j=i(4402),E=i(4351);var k=i(7956),T=i(3239),I=i(9251);class N extends g{static featureName=I.t;constructor(e,n){let r=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,n,I.t,r),c.il&&((0,t.OP)(e).initHidden=Boolean("hidden"===document.visibilityState),(0,k.N)((()=>(0,s.p)("docHidden",[(0,h.z)()],void 0,I.t,this.ee)),!0),(0,T.bP)("pagehide",(()=>(0,s.p)("winPagehide",[(0,h.z)()],void 0,I.t,this.ee))),this.importAggregator())}}var P=i(3081);class S extends g{static featureName=P.t9;constructor(e,t){let n=!(arguments.length>2&&void 0!==arguments[2])||arguments[2];super(e,t,P.t9,n),this.importAggregator()}}new class{constructor(e){let t=arguments.length>1&&void 0!==arguments[1]?arguments[1]:(0,j.ky)(16);c._A?(this.agentIdentifier=t,this.sharedAggregator=new y({agentIdentifier:this.agentIdentifier}),this.features={},this.desiredFeatures=new Set(e.features||[]),this.desiredFeatures.add(v),Object.assign(this,(0,a.j)(this.agentIdentifier,e,e.loaderType||"agent")),this.start()):(0,f.Z)("Failed to initial the agent. Could not determine the runtime environment.")}get config(){return{info:(0,t.C5)(this.agentIdentifier),init:(0,t.P_)(this.agentIdentifier),loader_config:(0,t.DL)(this.agentIdentifier),runtime:(0,t.OP)(this.agentIdentifier)}}start(){const t="features";try{const n=r(this.agentIdentifier),i=[...this.desiredFeatures];i.sort(((t,n)=>e.p[t.featureName]-e.p[n.featureName])),i.forEach((t=>{if(n[t.featureName]||t.featureName===e.D.pageViewEvent){const r=function(t){switch(t){case e.D.ajax:return[e.D.jserrors];case e.D.sessionTrace:return[e.D.ajax,e.D.pageViewEvent];case e.D.sessionReplay:return[e.D.sessionTrace];case e.D.pageViewTiming:return[e.D.pageViewEvent];default:return[]}}(t.featureName);r.every((e=>n[e]))||(0,f.Z)("".concat(t.featureName," is enabled but one or more dependent features has been disabled (").concat((0,E.P)(r),"). This may cause unintended consequences or missing data...")),this.features[t.featureName]=new t(this.agentIdentifier,this.sharedAggregator)}})),(0,_.Qy)(this.agentIdentifier,this.features,t)}catch(e){(0,f.Z)("Failed to initialize all enabled instrument classes (agent aborted) -",e);for(const e in this.features)this.features[e].abortHandler?.();const n=(0,_.fP)();return delete n.initializedAgents[this.agentIdentifier]?.api,delete n.initializedAgents[this.agentIdentifier]?.[t],delete this.sharedAggregator,n.ee?.abort(),delete n.ee?.get(this.agentIdentifier),!1}}}({features:[v,N,S],loaderType:"lite"})})(),window.NRBA=o})();</script>
+<meta name="document-type" content="Public">
+<meta name="document-rating" content="Safe for Kids">
+<meta name="robots" content="ALL, INDEX, FOLLOW">
+<meta name="googlebot" content="index, follow">
+<meta name="Expires" content="never">
+<meta name="coverage" content="Worldwide">
+<meta name="distribution" content="Global">
+<meta name="rating" content="General">
+<meta name="revisit-after" content="7 days">
+<meta name="target" content="all">
+<meta name="HandheldFriendly" content="True">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="apple-touch-icon" href="https://princeweb.websites.co.in/img/favicon.ico?v=1498136934"/>
+<meta name="theme-color" content="#242c42">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+
+
+<meta name="title" content="PRINCE WEB in  Patna">
+<meta name="description" content="PRINCE WEB in  Patna">
+<meta name="author" content="PRINCE WEB">
+<meta name="keywords" content="PRINCE WEB,PRINCE WEB in Patna,PRINCE WEB in Bihar,PRINCE WEB in India,PRINCE WEB in EDUCATION">
+
+
+<meta name="csrf-token" content="A5kMxV07hkBcuxGUGzeBdQTX2OjHEYT0W4KtWDCs">
+
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PRINCE WEB in  Patna">
+<meta name="twitter:image" content="https://princeweb.websites.co.in/">
+<meta name="twitter:image:alt" content="PRINCE WEB in  Patna">
+<meta name="twitter:description" content="PRINCE WEB in  Patna">
+
+
+
+<meta property="og:site_name" content="princeweb">
+<meta property="og:type" content="website">
+<meta property="og:title" content="PRINCE WEB in  Patna">
+<meta property="og:description" content="PRINCE WEB in  Patna">
+<meta property="og:image" content="https://princeweb.websites.co.in/">
+<meta property="og:url" content="https://princeweb.websites.co.in">
+
+
+
+
+<meta name="geo.position" content="25.70359591202559;86.36512549594045">
+<meta name="geo.placename" content="Patna">
+<meta name="geo.region" content="IN">
+        <title>PRINCE WEB in  Patna </title>
+
+        
+        <!-- Favicon -->
+    <link rel="icon" href="https://princeweb.websites.co.in/img/favicon.ico?v=1195647405" type="image/x-icon" />
+
+        <!-- Google font -->
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600" onload="this.rel='stylesheet'">
+        <link rel="preload" as="font" href="https://fonts.googleapis.com/css?family=Poppins&display=swap" onload="this.rel='stylesheet'">
+        <!-- BS4 minified v1.0.0 CSS -->
+        <link rel="stylesheet" href="https://princeweb.websites.co.in/coaching-pro/css/bootstrap.min.css">
+        <!-- Custom minified CSS -->
+        <link rel="stylesheet" href="https://princeweb.websites.co.in/coaching-pro/css/custom.min.css?v=684326638"> 
+
+        
+        <link rel="stylesheet" href="https://princeweb.websites.co.in/coaching-pro/css/ecommerce.min.css?v=996672813">
+        
+        <link media="none" onload="if(media!='all')media='all'" rel="stylesheet" href="https://princeweb.websites.co.in/common/css/custom-toast.css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://princeweb.websites.co.in/coaching-pro/fonts/css/all.min.css">
+        
+        <!-- Select2 css files -->
+        <link media="none" onload="if(media!='all')media='all'" href="https://princeweb.websites.co.in/common/css/select2.min.css" rel="stylesheet" />
+
+        <!-- animate.css -->
+        <link media="none" onload="if(media!='all')media='all'" href="https://princeweb.websites.co.in/common/css/animate.css" rel="stylesheet" />
+
+        <!-- manifest request -->
+        <link rel="manifest" href="/manifest.json?theme_color=%23242c42">
+
+        <link rel="canonical" href="https://princeweb.websites.co.in/index.php">
+
+        <link rel="alternate" href="https://princeweb.websites.co.in" hreflang="en-us">
+
+            
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.css" />
+
+    
+    <link rel="stylesheet" href="https://princeweb.websites.co.in/coaching-pro/slick/slick.css"> 
+    
+
+
+        <script>
+            window.Laravel = {"csrfToken":"A5kMxV07hkBcuxGUGzeBdQTX2OjHEYT0W4KtWDCs"};
+        </script>
+
+        <!-- Google Analytics -->
+        <script async> 
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o), m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m) })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+            ga('create', 'UA-98172888-1', 'auto'); ga('send', 'pageview');
+        </script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-GH0QDVRYC5"></script>
+<script>
+     window.dataLayer = window.dataLayer || [];
+
+     function gtag() {
+     dataLayer.push(arguments);
+     }
+     gtag('js', new Date());
+
+     gtag('config', 'G-GH0QDVRYC5');
+     // gtag('config', 'UA-98172888-1');
+</script>
+<!-- GA4 end -->        <!-- GA4 end -->
+
+        <!-- Flutterwave -->
+        <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+<script
+        id="fsc-api"
+        src="https://d1f8f9xcsvx3ha.cloudfront.net/sbl/0.8.1/fastspring-builder.min.js"
+        type="text/javascript"
+        data-storefront="websites.onfastspring.com/popup-websites"
+        data-error-callback="fscErrorCallback"
+        data-popup-closed="fscPopupClosed">
+    </script>
+
+ <script>
+var s = {
+                'products' : [
+                                {
+                                    'path':book,
+                                    'quantity': 1
+                                }
+                ],
+                'checkout': true
+            }
+            fastspring.builder.push(s);
+        });
+</script> -->
+
+<!-- Flutterwave -->
+<script src="https://checkout.flutterwave.com/v3.js"></script>
+
+
+
+        <!-- Facebook Pixel Code -->
+        <!-- <script>
+            !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+            n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+            n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+            t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+            document,'script','//connect.facebook.net/en_US/fbevents.js');
+            fbq('init', '208608892996577');
+            fbq('track', 'PageView');
+        </script>
+        
+        <noscript>
+            <img height="1" width="1" style="display:none" 
+                src="//www.facebook.com/tr?id=208608892996577&ev=PageView&noscript=1"/>
+        </noscript> -->
+
+        <!-- Google Ads -->
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <script>
+                 (adsbygoogle = window.adsbygoogle || []).push({
+                      google_ad_client: "ca-pub-9893140156928974",
+                      enable_page_level_ads: true
+                 });
+            </script>
+        
+        
+                                            </head>
+
+    <body>
+        
+        <input type="hidden" class="__website_id" id="website_id" value="156331">
+        
+                    <input type="hidden" id="businessdetails_id" value="156255">
+        
+        
+        <script type='application/ld+json'>
+    {
+        "@context": "http://www.schema.org",
+        "@type": "LocalBusiness",
+        "name": "PRINCE WEB",
+        "url": "https://princeweb.websites.co.in",
+        "sameAs": [
+            ""
+        ],
+        "priceRange":"$$$",
+         "telephone":"+91**********6607",    
+        "logo": {
+            "@type": "ImageObject",
+            "caption": "PRINCE WEB"
+                    },
+        "image": {
+            "@type": "ImageObject",
+            "caption": "PRINCE WEB",
+                        "url": "https://princeweb.websites.co.in"
+        },
+        "description": "",
+        "address": {
+            "@type": "PostalAddress",
+             "streetAddress": "Unnamed RoadBihar",              "addressLocality": "Patna",              "addressRegion": "Bihar",              "postalCode": "848203",              "addressCountry": "India"         },
+        "review": {
+            "@type": "Review",
+            "reviewRating": {
+                "@type": "Rating",
+                "ratingValue": "5",
+                "bestRating": "5"
+            },
+            "author": {
+                "@type": "Person",
+                "name": "PRINCE WEB"
+            }
+        },
+                    "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": "25.70359591202559",
+                "longitude": "86.36512549594045"
+            },
+                            "openingHoursSpecification": [
+                {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": [
+                    "Monday",
+                    "Tuesday",
+                    "Wednesday",
+                    "Thursday",
+                    "Friday",
+                    "Saturday",
+                    "Sunday"
+                ],
+                "opens": "00:00",
+                "closes": "23:59"
+                }
+            ],
+                 "email": "p************@g*****.com",                     "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+91**********6607",
+                "contactType": "sales"
+            }
+            }
+</script>        
+        <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "url": "https://princeweb.websites.co.in",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://princeweb.websites.co.in/search/all/{search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+</script>
+        
+        <header>
+    <nav id="navbar-wrapper" class="navbar navbar-expand-lg fixed-top navbar-light nav-mob-bg nav-bg-color">
+        <div class="container-fluid">
+            <button 
+                class="navbar-toggler mobile-toggler" 
+                type="button" 
+                data-toggle="collapse" 
+                data-target="#main-navbar" 
+                aria-controls="main-navbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+                style="border: none;">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- brand logo -->
+            <div class="brand-logo-wrap text-center">
+                <a href="https://princeweb.websites.co.in" title="PRINCE WEB" class="mr-auto mx-md-auto text-center">
+                                            <span class="word-wrap-bw bname">
+                            PRINCE WEB
+                        </span>
+                                    </a>
+            </div>
+            
+                            <div id="main-navbar" class="collapse navbar-collapse justify-content-center" style="position: relative;">
+                    <ul class="navbar-nav navbar-links flex-md-row text-center text-md-left" style="flex-wrap: wrap;">
+                                                                                    
+                                <li class="nav-item active">
+                                    <a class="nav-link" title="go to Home" href="https://princeweb.websites.co.in">
+                                        Home
+                                    </a>
+                                </li>
+                                                                                                                
+                                <li class="nav-item ">
+                                    <a class="nav-link" title="go to Updates" href="https://princeweb.websites.co.in/updates/list">
+                                        Updates
+                                    </a>
+                                </li>
+                                                                                                                <li class="nav-item dropdown ">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        More Pages
+                                    </a>
+
+                                    <ul class="dropdown-menu dropdown-menu-right shadow-sm text-center text-md-left" aria-labelledby="navbarDropdownMenuLink">
+                                        
+                                                                                            <li class="">
+                                                    <a class="dropdown-item" href="https://princeweb.websites.co.in/pages/how-to-write-bash-script/39797">
+                                                        How to write bash script
+                                                    </a>
+                                                </li>
+                                            
+                                                                            </ul>
+                                </li>
+                                                                                                                
+                                <li class="nav-item ">
+                                    <a class="nav-link" title="go to Contact" href="https://princeweb.websites.co.in/contact">
+                                        Contact
+                                    </a>
+                                </li>
+                                                                        </ul>
+                </div>
+            
+            
+            <a href="#" 
+                title="open search box"
+                class="d-none d-sm-none d-md-block px-3" 
+                data-toggle="modal" 
+                data-target="#searchModal">
+                <i class="fas fa-1x fa-search"></i>
+            </a>
+
+            <a href="#" 
+                title="open search modal"
+                class="d-block d-sm-block d-md-none px-3" 
+                data-toggle="modal" 
+                data-target="#searchModal">
+                <i class="fas fa-1x fa-search"></i></a>
+            </a>
+
+            
+            
+        </div>
+    </nav>
+</header>
+            
+    
+    
+    
+    
+    
+            
+        <section id="hero-slider" class="hero-slider carousel slide" data-ride="carousel" data-interval="4000">
+                            <div class="carousel-inner h-100">
+                    <div class="carousel-item h-100 active">
+                        <img src="https://princeweb.websites.co.in/coaching-pro/img/defaults/slider_default_img.jpg" 
+                            title="PRINCE WEB"
+                            class="d-block w-100 hero-slider-image" 
+                            alt="default slider image">
+
+                        <div class="hero-overlay"></div>
+                        
+                        <div class="carousel-caption d-md-block">
+                            <h1>PRINCE WEB</h1>
+                        </div>
+                    </div>
+                </div>
+            
+            
+            
+            <div class="hero-box d-none d-md-block">
+                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                        <li class="nav-item  w-100 ">
+                        <a class="nav-link" 
+                            id="pills-heroform-tab" 
+                            data-toggle="pill" 
+                            href="#pills-heroform" 
+                            role="tab" 
+                            aria-controls="pills-heroform" 
+                            aria-selected="false">
+                            Enquire
+                        </a>
+                    </li>
+                </ul>
+
+                
+                <div class="tab-content" id="pills-tabContent">
+                    
+                    
+                    
+                    <div class="tab-pane fade  show active " id="pills-heroform" role="tabpanel" aria-labelledby="pills-heroform-tab">
+                        <div class="hero-form-wrap px-3 py-2">
+                            <form class="" role="form" id="sendMessageHeroForm">
+                                <input type="hidden" name="_token" value="A5kMxV07hkBcuxGUGzeBdQTX2OjHEYT0W4KtWDCs">
+                            
+                                <div id="sendMessageHeroForm-response" class="alert alert-dismissible fade hide" role="alert">
+                                    <span id="sendMessageHeroForm-status"></span>
+                                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            
+                                <div class="form-group input-wrap">
+                                    <label for="name" class="sr-only">Name</label>
+                                    <input type="text" class="form-control input-reset" name="name" id="name" placeholder="Name" required>
+                                </div>
+                            
+                                <div class="form-group input-wrap">
+                                    <label for="email" class="sr-only">Email</label>
+                                    <input type="email" class="form-control input-reset" name="email" id="email" placeholder="Email" required>
+                                </div>
+                            
+                                <div class="row mx-0">
+                                    <div class="form-group input-wrap col-md-5 col-sm-12">
+                                        <label for="herophonecode" class="mr-md-2 sr-only">Phone Code</label>
+                                        <select id="herophonecode" name="phonecode" class="form-control" required>
+                                        </select>
+                                    </div>
+                            
+                                    <div class="form-group input-wrap col-md-6 offset-md-1 col-sm-12">
+                                        <label for="phone" class="sr-only">Phone</label>
+                                        <input type="text" class="form-control input-reset" name="phone" id="phone" placeholder="Phone Number" required>
+                                    </div>
+                                </div>
+                            
+                                <div class="form-group input-wrap">
+                                    <label for="message" class="sr-only">Message</label>
+                                    <textarea class="form-control _set_heromsg input-reset" name="message" id="message" rows="3" placeholder="Message" requireds></textarea>
+                                </div>
+                            
+                                <div class="form-group">
+                                    <div class="recaptcha">
+                                        <div id="g-recaptcha-widget3" class="recaptcha-scale"></div>
+                                    </div>
+                                </div>
+                            
+                                <input type="hidden" name="user_id" value="261430">
+                                <input type="hidden" name="businessdetails_id" value="156255">
+                                <input type="hidden" name="website_id" value="156331">
+                            
+                                <div class="form-group text-right">
+                                    <button type="submit" id="sendMessageHeroBtn" class="hero-form-btn">
+                                        SEND
+                                        <i id="inquiry_send" class="show fas fa-paper-plane"></i>
+                                        <i id="inquiry_loader" class="hide fas fa-circle-notch fa-spin"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    
+    
+        
+    
+            <section id="business-section" class="business-section" style="background-color: #f2f4f7;">
+            <div class="container pt-5">
+                <div class="business-wrap">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <div class="b-name-wrap">
+                                <h1 class="b-name py-4">PRINCE WEB</h1>
+                            </div>
+                        </div>
+
+                        
+                        <div class="col-md-12">
+                            <div class="b-about">
+                                <div class="row">
+                                                                                                                                            </div>
+                            </div>
+                        </div>
+    
+                            
+                        <div class="col-md-12 text-center mt-2">
+                                                            <a href="tel:+91**********6607"
+                                    class="_click_record theme-btn btn-one m-3"
+                                    title="call +91**********6607"
+                                    data-websiteid="156331"
+                                    data-type="phone">
+                                    Call Us
+                                </a>
+                                                        
+                                                            <a href="mailto:p************@g*****.com"
+                                    title="mail to p************@g*****.com"
+                                    class="_click_record theme-btn btn-one m-3"
+                                    data-websiteid="156331"
+                                    data-type="email">
+                                    Mail Us
+                                </a>
+                                
+                            <a href="https://princeweb.websites.co.in/./contact"
+                                title="reach us"
+                                class="theme-btn btn-one m-3">
+                                Reach Us
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    
+    
+                
+    
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 my-4">
+                    <div class="ad-slot mx-auto">
+                        <div class="leader-board test-ad mx-auto">
+                            <!-- Home Page 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9893140156928974"
+     data-ad-slot="6370023656"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                        </div>
+                        <div class="ad-link mx-auto text-right">
+                            <a title="remove ads" 
+                                href="https://websites.co.in/pricing" 
+                                target="_blank" 
+                                rel="noopener">
+                                Remove Ads
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+                
+    
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 my-4">
+                    <div class="ad-slot mx-auto">
+                        <div class="leader-board test-ad mx-auto">
+                            <!-- Home Page 2 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9893140156928974"
+     data-ad-slot="8306765749"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                        </div>
+                        <div class="ad-link mx-auto text-right">
+                            <a title="remove ads" 
+                                href="https://websites.co.in/pricing" 
+                                target="_blank" 
+                                rel="noopener">
+                                Remove Ads
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+     
+                    <section id="update-section" class="update-section mt-60">
+                <div class="product-area">
+                    <div class="container-fluid">
+                        
+                        <div class="row mt-60">
+                            <div class="col-md-12 text-center">
+                                <div class="s-title-wrap">
+                                    
+                                                                            <h2 class="s-title">Our Updates</h2>
+                                                                    </div>
+                            </div>
+                        </div>
+
+                        
+                        <div class="row mt-100 justify-content-center">
+                                                            <div class="col-md-6">
+                                    
+                                    <div class="update-card mb-60">
+                                        <div class="row">
+                                            
+                                            <div class="col-md col-sm-12" id="update-video-col-265925">
+                                                <div class="u-image-wrap">
+                                                                                                            <img src="https://princeweb.websites.co.in/coaching-pro/img/defaults/media-video-default.svg" 
+                                                            class="img-fluid u-image"
+                                                            title="Welcome to PRINCE WEB"
+                                                            id="update-vid-image-265925"
+                                                            alt="Welcome to PRINCE WEB">
+
+                                                        <input type="hidden" 
+                                                            class="update-data" 
+                                                            data-id="265925" 
+                                                            title="Welcome to PRINCE WEB"
+                                                            id="update-data-265925" 
+                                                            value="This is PRINCE WEB website created by PRINCE KUMAR.
+                                        PRINCE WEB falls in EDUCATION line of business.
+                                        You can visit us offline at our office located at : Unnamed RoadBihar, Unnamed Road, Patna, Bihar, India - 848203
+                                        You can contact us by phone - **********6607 or email us on p************@g*****.com or use the Contact Form.
+                                        This is your first post. Edit or delete it, then start writing!">
+
+                                                    
+                                                    <div class="u-overlay"></div>
+
+                                                                                                            <div class="u-tags-wrap">
+                                                                                                                                                                                        <a class="badge badge-primary p-2" 
+                                                                    title="search for post" 
+                                                                    href="/search/tags/post">
+                                                                    post
+                                                                </a>
+                                                                                                                                                                                                                                                    </div>
+                                                    
+                                                </div>
+                                            </div>
+
+                                            
+                                            <div class="col-md col-sm-12">
+                                                
+                                                
+                                                
+                                                <div class="u-content-wrap pb-40 ">
+
+                                                    
+                                                    
+                                                    <div class="u-title-wrap">
+                                                        <h3>
+                                                            <a title="view Welcome to PRINCE WEB" class="u-title" href="https://princeweb.websites.co.in/update/welcome-to-prince-web/265925">
+                                                                Welcome to PRINCE WEB
+                                                            </a>
+                                                        </h3>
+                                                    </div>
+
+                                                    <div class="u-meta-wrap">
+                                                        <small class="u-by">By PRINCE WEB</small>
+                                                        <small class="u-on">
+                                                            &nbsp; |&nbsp; 22nd January, 2020
+                                                        </small>
+                                                    </div>
+
+                                                    <div class="u-description-wrap mt-3">
+                                                        <div class="u-descriptuion">
+                                                            This is PRINCE WEB website created by PRINCE KUMAR.
+                                        PRINCE WEB falls in EDUCATION line of business.
+                                        You can visit us off...
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="u-action-wrap">
+                                                        <a title="read more about Welcome to PRINCE WEB" 
+                                                            class="u-action"
+                                                            href="https://princeweb.websites.co.in/update/welcome-to-prince-web/265925">
+                                                            Read More
+                                                        </a>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        
+                                        <script type="application/ld+json">
+            {
+                "@context": "http://schema.org",
+                "@type": "BlogPosting",
+                "headline": "Welcome to PRINCE WEB",
+                "image": {
+                    "@type": "ImageObject",
+                    "url": "https://princeweb.websites.co.in"
+                },
+                "mainEntityOfPage": {
+                    "@type": "WebPage",
+                    "@id": "https://princeweb.websites.co.in/update/welcome-to-prince-web/265925"
+                },
+                "description": "This is PRINCE WEB website created by PRINCE KUMAR.                                         PRINCE WEB falls in EDUCATION line of business.                                         You can visit us off...",
+                "datePublished": "2020-01-22 15:29:09",
+                "dateModified": "2020-01-22 15:29:09",
+                "author": {
+                    "@type": "Organization",
+                    "name": "PRINCE WEB"
+                },
+                "publisher": {
+                    "@type": "Organization",
+                    "name": "PRINCE WEB",
+                    "logo": {
+                        "@type": "ImageObject",
+                        "url": "https://princeweb.websites.co.in"
+                    }
+                },
+                "articleSection": [
+                                    ]
+            }
+        </script>
+                                        </div>
+                                </div>
+                                                    </div>
+
+                    </div>
+                </div>
+            </section>
+            
+    
+    
+    
+                
+    
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 my-4">
+                    <div class="ad-slot mx-auto">
+                        <div class="leader-board test-ad mx-auto">
+                            <!-- Home Page 3 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-9893140156928974"
+     data-ad-slot="5703695270"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                        </div>
+                        <div class="ad-link mx-auto text-right">
+                            <a title="remove ads" 
+                                href="https://websites.co.in/pricing" 
+                                target="_blank" 
+                                rel="noopener">
+                                Remove Ads
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+                                    
+
+        <div id="newsletter">
+    <div class="container">
+        <div class="footer-subscribe">
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <div class="subscribe-text-wrap py-4 px-3">
+                        <h2 class="subscribe-text text-center text-md-left">
+                            Subscribe to our mailing list for latest updates.
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                    <div class="subscribe-form-wrap py-4">
+                        <form id="subscribe-from">
+                            
+                            <div id="subscriber-response" class="alert alert-dismissible mx-auto p-2 fade hide" role="alert">
+                                <span id="subscriber-status"></span>
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="newsletter-cell-wrap">
+                                
+                                <input type="text" 
+                                    title="enter your email to subscribe"
+                                    id="subscriber-email"
+                                    name="subscriber-email"
+                                    class="form-control subscribe-input" 
+                                    placeholder="Enter Your E-mail Here" 
+                                    aria-label="Enter your e-mail here" 
+                                    aria-describedby="subscribe">
+                        
+                                
+                                <button class="subscribe-button" 
+                                    type="submit"
+                                    title="subscribe to PRINCE WEB newsletter">
+                                    SUBSCRIBE
+                                    
+                                    
+                                    
+                                    <i id="subscriber_loader" class="hide fas fa-circle-notch fa-spin"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        
+        <footer class="page-footer">
+    <div class="footer-wrap">
+        <div class="container">
+            <div class="row pt-5 pb-2">
+                
+                <div class="col-md col-sm-12">
+                    <div class="footer-widget mt-5">
+                        <div class="f-brand-wrap text-center text-md-left mb-5">
+                                                        <h3 class="b-name">PRINCE WEB</h3>
+                        </div>
+                        <div class="fw-title-wrap">
+                            <h3 class="mb-3 fw-title title-bline">Socials</h3>
+                            <div class="f-social-wrap">
+                                                                
+                                 
+                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="col-md col-sm-12">
+                    <div class="footer-widget mt-5">
+                                                    <div class="fw-title-wrap">
+                                <h3 class="mb-5 fw-title title-bline">Useful Tags</h3>
+                            </div>
+                            <ul class="fw-tags">
+                                                                                                            <li class="mb-3">
+                                            <a title="PRINCE Web" 
+                                                class="tag link-hover"
+                                                href="/search/tags/prince-web"
+                                                rel="tag">
+                                                <i class="fas fa-hashtag"></i> PRINCE Web
+                                            </a>
+                                        </li>
+                                                                            <li class="mb-3">
+                                            <a title="princekrvert" 
+                                                class="tag link-hover"
+                                                href="/search/tags/princekrvert"
+                                                rel="tag">
+                                                <i class="fas fa-hashtag"></i> princekrvert
+                                            </a>
+                                        </li>
+                                                                        
+                                    <script type='application/ld+json'>
+    {
+        "@context": "http://schema.org/",
+        "@type": "WebPage",
+        "keywords": ["PRINCE Web","princekrvert"],
+        "position": "156255",
+        "alternateName": "PRINCE WEB",
+        "description": "",
+        "name": "PRINCE WEB"
+    }
+</script>                                                            </ul>
+                                            </div>
+                </div>
+
+                
+                                    <div class="col-md col-sm-12">
+                        <div class="footer-widget mt-5">
+                            <div class="fw-title-wrap">
+                                <h3 class="mb-5 fw-title title-bline">Quick Links</h3>
+                            </div>
+                            <ul class="fw-quicklinks">
+                                                                                                            <li class="mb-3">
+                                            <i class="fas fa-angle-right"></i>
+                                            <a title="go to Home" 
+                                                class="qlink link-hover"
+                                                href="https://princeweb.websites.co.in">
+                                                Home
+                                            </a>
+                                        </li>
+                                                                                                                                                <li class="mb-3">
+                                            <i class="fas fa-angle-right"></i>
+                                            <a title="go to Updates" 
+                                                class="qlink link-hover"
+                                                href="https://princeweb.websites.co.in/updates/list">
+                                                Updates
+                                            </a>
+                                        </li>
+                                                                                                                                                                                                                    <li class="mb-3">
+                                            <i class="fas fa-angle-right"></i>
+                                            <a title="go to Contact" 
+                                                class="qlink link-hover"
+                                                href="https://princeweb.websites.co.in/contact">
+                                                Contact
+                                            </a>
+                                        </li>
+                                                                                                </ul>
+                        </div>
+                    </div>
+                
+                
+                <div class="col-md col-sm-12">
+                    <div class="footer-widget mt-5">
+                        <div class="fw-title-wrap">
+                            <h3 class="mb-5 fw-title title-bline">Reach Us</h3>
+                        </div>
+                        <div class="fw-reachus">
+                                                        <div class="reach-email">
+                                <span class="mb-2">Email Us</span>
+                                    <p> 
+                                        <i class="far fa-envelope"></i>
+                                        <a href="mailto:p************@g*****.com"
+                                            title="mail to p************@g*****.com"
+                                            class="_click_record b-email link-hover"
+                                            data-websiteid="156331"
+                                            data-type="email">
+                                        p************@g*****.com
+                                        </a>
+                                    </p>
+                                </div>
+                                                        <div class="reach-phone">
+                                <span class="mb-2">Call Us</span>
+                                                                    <p class="mb-0">
+                                        <i class="fas fa-phone"></i>
+                                        <a href="tel:+91**********6607"
+                                            class="_click_record b-phone link-hover"
+                                            data-websiteid="156331"
+                                            title="call +91**********6607"
+                                            data-type="phone">
+                                            +91 **********6607
+                                        </a>
+                                    </p>
+                                
+                                                            </div>
+                            
+                                                            <div class="reach-address">
+                                    Address
+                                    <p>
+                                                                                    Unnamed RoadBihar    
+                                                                                                                            Unnamed Road
+                                                                                                                            Patna
+                                                                                                                            Bihar
+                                                                                                                            India - 
+                                                                                                                            848203
+                                        .
+                                    </p>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                
+                                
+                
+                            </div>
+        </div>
+    </div>
+</footer>
+
+                    <section>
+                <div class="ui placeholder center aligned segment text-center mt-4">
+                    <p>
+                        <strong>This site was designed with <a class="google-link"href="https://play.google.com/store/apps/details?id=in.co.websites.websitesapp&referrer=utm_source%3Dwebsite_landing_page%26utm_medium%3Dweb_dashboard%26utm_term%3Dwebsite_button_click" target="_blank">Websites.co.in - Website Builder
+            </a><i class="fab fa-android"></i>
+                        </strong>
+                    </p>
+
+                    <a href="https://websites.co.in" class="" target="_blank">
+                        <button class="theme-btn btn-one">
+                            Create Your Free Website Instantly!
+                        </button>
+                    </a>
+                    </p>
+                </div>
+            </section>
+        
+        <footer class="copy-right py-2">
+    <div class="container" style="border-top: 1px solid rgba(255,255,255,0.1);">
+        <div class="row py-3">
+            <div class="col-md col-sm-12 text-center">
+                &copy; 2023
+                                    <a href="https://princeweb.websites.co.in" target="_blank" rel="noopener">
+                        PRINCE WEB
+                    </a>
+                            </div>
+
+            
+                            <div class="col-md col-sm-12 text-center">
+                    <i class="fa fa-sitemap"></i>
+                    <a title="view PRINCE WEB sitemap" href="https://princeweb.websites.co.in/sitemap" target="_blank" rel="noopener">
+                        Sitemap
+                    </a>
+                </div>
+            
+                            <div class="col-md col-sm-12 text-center">
+                    <i class="fa fa-chart-line"></i> 277 views
+                </div>
+            
+            <div class="col-md col-sm-12 text-center">
+                <a href="#" onclick="event.preventDefault();" title="report this website" id="report-btn" rel="noopener">
+                    <i class="fas fa-exclamation-circle"></i> Report abuse
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</footer>
+        <div class="quick-float">
+            <a class="" 
+            target="_blank" 
+            rel="noopener nofollow" 
+            href="https://api.whatsapp.com/send?phone=916607&text=Hi, PRINCE KUMAR need more information about PRINCE WEB. please contact me.">
+            <img class="quick-float-icon" 
+                src="https://princeweb.websites.co.in/img/svg-icons/whatsapp.svg" 
+                alt="WhatsApp" 
+                title="message PRINCE WEB on WhatsApp">
+        </a>
+        
+                                                            <a class="_click_record" 
+                        data-websiteid="156331" 
+                        data-type="map" 
+                        target="_blank" 
+                        rel="noopener nofollow" 
+                        href="https://www.google.com/maps/?q=25.70359591202559,86.36512549594045">
+                        <img class="quick-float-icon" 
+                            src="https://princeweb.websites.co.in/img/svg-icons/google.svg" 
+                            alt="Google Map" 
+                            title="view PRINCE WEB on google map">
+                    </a>
+                                        </div>
+        <div class="popup">
+    <div id="popup" class="popup__content">
+        <div id="popup__close">
+            &#10005;
+        </div>
+                
+        <p class="popup__text"></p>
+        
+        <div class="hide popup__button__div">
+            <a  href="#" class="popup__button"></a>
+        </div>
+    </div>
+</div>        <!-- alerts -->
+        <!-- visitor warning alert -->
+<style>
+     .verification-alert-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0,0,0,0.5);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  z-index: 99999;
+  
+}
+
+.verification-alert-message {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #333;
+  width: 95%;
+  max-width: 400px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.modal-overlay{
+     position: fixed;
+     top: 0;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background-color: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+     z-index: 99999; /* higher than the modal */
+}
+
+.verification-alert-close {
+    position: absolute;
+    right: 17px;
+    top: 1px;
+    cursor: pointer;
+    transition: all -0.5s;
+    font-size: 25px;
+}
+
+.warning-icon img{
+  height: 15vw;
+  max-height: 90px;
+  width: 15vw;
+  max-width: 90px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+}
+
+/* .text b {
+  text-align: center;
+  padding: 75px;
+} */
+
+/* @media (max-width: 768px) {
+  .text b {
+    padding: 45px;
+  }
+}
+
+@media (max-width: 576px) {
+  .text b {
+    padding: 25px;
+  }
+} */
+.dotted-hr {
+  border: none;
+  border-top: 1px dotted #999;
+}
+
+.verification-alert-footer{
+  text-align: center;
+}
+
+.verification-alert-footer #verification-alert-btn{
+  color: black;
+  background: #f9ca0e;
+  padding: 0.5rem 1rem;
+}
+
+
+
+    
+</style>
+<!-- <div class="modal-overlay">     -->
+<div class="verification-alert-container">
+     <div class="verification-alert-message">
+          <span class="verification-alert-close">&times;</span>
+          <div class= "warning-icon">
+          <img
+                src ="https://princeweb.websites.co.in/img/warning1.png">
+          </div>
+          <div class="text">
+               
+               <p style="text-align:center;">
+               <b>Caution! Unverified Website!</b>
+               </p>
+               <hr class="dotted-hr" >
+               <p>
+               The identity of this user has not yet been verified. Please make transactions at your own risk!
+               </p>
+          </div>
+          <div class="verification-alert-footer">
+            <a id="verification-alert-btn" href="javascript:void(0);" onclick="sendMessage(this)" class="verification-alert-btn" target="_blank">
+              <img
+                  alt="Custom"
+                  class="kmButtonBlockIcon"
+                  src="https://d3k81ch9hvuctc.cloudfront.net/company/9TnLMN/images/5954f5b1-4895-4250-9579-ca718df4db05.png?v=0"
+                  style="
+                  border: 0;
+                  border-radius:5rem;
+                  height: auto;
+                  line-height: 100%;
+                  max-width: 20px;
+                  outline: none;
+                  text-decoration: none;
+                  width: 20px;
+                  /* display: block; */
+                  display: inline;
+                  "
+                  width="20"
+              />
+              <b>Notify Website Owner</b>
+            </a>
+          </div>
+     </div>
+</div>
+</div>
+<!-- </div> -->
+
+
+<script>
+  window.addEventListener("load", function() {
+      var cookieName = "alert_popup_message_shown";
+
+      // Check if the cookie or session storage value is set
+      // !document.cookie.includes(cookieName) &&
+      if (!sessionStorage.getItem(cookieName)) {
+            // Show the custom HTML verification-alert
+            document.querySelector(".verification-alert-container").style.display = "block";
+            document.querySelector("body").style.overflow = 'hidden';
+
+            // Set the cookie or session storage value
+            // var now = new Date();
+            // now.setTime(now.getTime() + 12 * 60 * 60 * 1000); // 12 hours in milliseconds
+            // document.cookie = cookieName + "=true; expires=" + now.toUTCString() + "; path=/";
+            sessionStorage.setItem(cookieName, true);
+
+      }
+
+      // Close the custom HTML verification-alert when the close button is clicked
+      document.querySelector(".verification-alert-close").addEventListener("click", function() {
+      document.querySelector(".verification-alert-container").style.display = "none";
+      document.querySelector("body").style.overflow = 'visible';
+      //  document.querySelector(".modal-overlay").style.display="none";
+      });
+  });
+  function sendMessage(e) {
+    let message = `Hi, Your site - ${window.location.origin} shows an alert message that your site isn't verified. Please OTP verify your phone number to remove the alert.`;
+    e.href = `https://wa.me/+917631996607?text=${message}`;
+  }
+</script>
+
+        <!--Search Modal Structure -->
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="search-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title text-center ml-auto text-uppercase" id="search-modal">Search</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" style="font-size: 34px;">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <form role="form" aria-labelledby="search form" id="searchForm">
+                <div class="modal-body">
+
+                    <div class="row mt-md-5 mt-2">
+                        <div class="col-md-12">
+                            <div class="form-group input-wrap">
+                                <input type="text" 
+                                    class="form-control" 
+                                    name="query" 
+                                    id="query" 
+                                    placeholder="Please Enter Search Term" autofocus required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row ml-4 py-md-5 py-4">
+
+                        <div class="col-md-4 col-sm-12 py-3 text-uppercase custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="products" value="products" />
+                            
+                                                                                                <label class="custom-control-label" for="products">Courses</label>
+                                                                                    </div>
+
+                        <div class="col-md-4 col-sm-12 py-3 text-uppercase custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="updates" value="updates" />
+                            <label class="custom-control-label" for="updates">
+                                
+                                                                    Updates
+                                                            </label>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 py-3 text-uppercase custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="media" value="media" />
+                            <label class="custom-control-label" for="media">
+                                
+                                                                    Media
+                                                            </label>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 py-3 text-uppercase custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="pages" value="pages" />
+                            <label class="custom-control-label" for="pages">Pages</label>
+                        </div>
+
+                        <div class="col-md-4 col-sm-12 py-3 text-uppercase custom-control custom-radio">
+                            <input class="custom-control-input" name="type" type="radio" id="all" value="all" checked/>
+                            <label class="custom-control-label" for="all">All</label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 text-center my-4">
+                            <button title="search" 
+                                type="submit"
+                                id="btn-search" 
+                                class="theme-btn btn-one mx-auto">
+                                Search <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+            </form>
+        </div>
+    </div>
+</div>
+        
+        
+
+        <!-- order Modal -->
+        <div class="modal fade" id="orderModal" tabindex="-1" role="dialog" aria-labelledby="order-modal" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <h5 class="modal-title text-center" id="order-modal">
+                            <span id="title-product-btn-value"></span> <span id="title-product-name"></span>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </h5>
+                        <!-- Form -->
+<form class="p-3" role="form" id="orderForm">
+    <input type="hidden" name="_token" value="A5kMxV07hkBcuxGUGzeBdQTX2OjHEYT0W4KtWDCs">
+
+    <div id="placeorder-response" class="alert alert-dismissible fade hide" role="alert">
+        <span id="placeOrder-status"></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+
+    <div class="form-group input-wrap">
+        <label for="order_name" class="sr-only">Name</label>
+        <input type="text" class="form-control input-reset" name="name" id="order_name" placeholder="Name" required>
+    </div>
+
+    <div class="form-group input-wrap">
+        <label for="order_email" class="sr-only">Email</label>
+        <input type="email" class="form-control input-reset" name="email" id="order_email" placeholder="Email" required>
+    </div>
+
+    <div class="row mx-0">
+        <div class="form-group input-wrap col-md-4 col-sm-12">
+            <label for="order_phonecode" class="mr-md-2 sr-only">Phone Code</label>
+            <select id="order_phonecode" name="order_phonecode" class="form-control" required>
+            </select>
+        </div>
+
+        <div class="form-group input-wrap col-md-7 offset-md-1 col-sm-12 pl-md-0">
+            <label for="order_phone" class="sr-only">Phone</label>
+            <input type="text" class="form-control input-reset" name="phone" id="order_phone" placeholder="Phone Number" required>
+        </div>
+    </div>
+
+    <div class="row mx-0">
+        <div class="form-group input-wrap col-md-5">
+            <label for="order_quantity" class="sr-only">Quantity</label>
+            <input class="form-control" id="order_quantity" name="quantity" type="number" min="1" value="1" placeholder="Quantity" required>
+        </div>
+
+        <div class="form-group input-wrap col-md-6 offset-md-1">
+            <label for="order_unit" class="sr-only">Unit</label>
+            <input class="form-control" id="order_unit" name="unit" type="text" placeholder="Unit" readonly>
+        </div>
+    </div>
+
+    <div class="form-group input-wrap">
+        <label for="order_message" class="sr-only">Message</label>
+        <textarea class="form-control input-reset" name="message" id="order_message" rows="3" placeholder="Message" required></textarea>
+    </div>
+
+    <div class="form-group">
+        <div class="recaptcha">
+            <div id="g-recaptcha-widget2" class="recaptcha-scale" style="transform: scale(0.9);"></div>
+        </div>
+    </div>
+
+    <input type="hidden" name="product_id" id="product_id" value="">
+
+    <input type="hidden" name="user_id" id="user_id" value="261430">
+
+    <input type="hidden" name="businessdetails_id" id="businessdetails_id" value="156255">
+
+    <input type="hidden" name="website_id" id="website_id" value="156331">
+
+    <div class="form-group text-center">
+        <button type="submit" id="placeOrder" title="place order" class="theme-btn btn-one" style="cursor: pointer;">
+            <span id="default-btn-value"></span>&nbsp;
+            <i id="placeorder_send" class="show fas fa-paper-plane"></i>
+            <i id="placeorder_loader" class="hide fas fa-circle-notch fa-spin"></i>
+        </button>
+    </div>
+
+</form>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div id="report-box" class="report-box">
+
+    <div class="report-box-header">
+        <h4>Safety and Abuse Reporting</h4>
+        <div id="report-close-btn" class="report-close-btn">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </div>
+    </div>
+
+    <div class="report-box-body">
+        <form class="report-form" role="form" id="report-form">
+            <input type="hidden" name="_token" value="A5kMxV07hkBcuxGUGzeBdQTX2OjHEYT0W4KtWDCs">
+
+            <div class="options-wrap">
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Harassment and Cyberbullying" class="option" id="reason1" required>
+                    <label for="reason1">Harassment and Cyberbullying</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Impersonation" class="option" id="reason2" required>
+                    <label for="reason2">Impersonation</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Violent Threats" class="option" id="reason3" required>
+                    <label for="reason3">Violent Threats</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Hate Speech Against a Protected Group" class="option" id="reason4" required>
+                    <label for="reason4">Hate Speech Against a Protected Group</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="Spam and Scams" class="option" id="reason5" required>
+                    <label for="reason5">Spam and Scams</label>
+                </div>
+                <div class="option-wrap">
+                    <input type="radio" name="report-reason" value="none" class="option" id="reason6" required>
+                    <label for="reason6">None of these are my issue</label>
+                </div>
+                <div class="option-wrap extra-field" id="extra-field">
+                    <label for="report-reason" class="sr-only">reason to report</label>
+                    <input type="text" class="report-reason" name="report-custom-reason" placeholder="reason to report">
+                </div>
+            </div>
+
+            <label for="report-email" class="sr-only">your email</label>
+            <input type="email" class="report-email" name="report-email" id="report-email" placeholder="your email*" required>
+            
+            <label for="report-msg" class="sr-only">message</label>
+            <textarea class="report-msg" 
+                name="report-msg" 
+                id="report-msg" 
+                rows="3" 
+                placeholder="message*" required></textarea>
+        
+            <input type="hidden" id="report-msg_title" name="msg_title" value="[Websites.co.in] Website Abuse Reported">
+            <input type="hidden" id="report-website_id" name="report-website_id" value="156331">
+            <input type="hidden" id="report-website_url" name="report-website_url" value="https://princeweb.websites.co.in">
+        
+            <button type="submit" class="report-send-btn">
+                Report this website
+            </button>
+        </form>
+        
+        <div id="report-success-box" class="report-success-box">
+            <h4>Thanks for being awesome!</h4>
+            <p>We appreciate you contacting us. Our support will get back in touch with you soon!</p>
+            <p>Have a great day!</p>
+        </div>
+
+        <div class="confirmation-box" id="confirmation-box">
+            <h3 class="c-title">Are you sure you want to report abuse against this website?</h3>
+            <div class="c-body">
+                <p>Please note that your query will be processed only if we find it relevant. Rest all requests will be ignored. If you need help with the website, please login to your dashboard and connect to support</p>
+            </div>
+            <div class="c-footer">
+                <a href="#" id="cancel-report-abuse" class="c-btn btn-cancel" onclick="event.preventDefault();">Cancel</a>
+                <a href="#" id="confirm-report-abuse" class="c-btn btn-confirm" onclick="event.preventDefault();">Confirm</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+        
+        <div id="custom-toast-body"></div>
+
+        
+        <div class="pqv-bg " id="pqv-popup-bg"></div>
+
+<!-- some text HackMe{f25a2fc72690b780b2a14e140ef6a9e0} --> 
+<div class="pqv-wrap " id="pqv-popup">
+    
+    <div class="pqv-container">
+        <div class="pqv-content">
+            <div class="lightbox-content">
+                <div class="product-quick-view-container">
+                    <button type="button" class="pqv-close pqv-close-btn" id="pqv-popup-close-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                    </button>
+
+                    <div class="product-info-col" id="pqv-data">
+                        <div class="product-info">
+                            <h4 class="product-name" id="pqv-data-pname"></h4>
+                            <div class="product-price-row">
+                                <p class="p-price">
+                                    <span id="pqv-data-pcurrency" class="_pqv_currency"></span>
+                                    <span id="pqv-data-pprice" class="_pqv_price"></span>
+                                </p>
+                            </div>
+                            <div class="product-variants-row" id="pqv-choices-area"></div>
+
+                            <div class="product-action-row">
+                                <p class="_pqv_error_msg" style="color: red;"></p>
+                                <input type="number" min="1" value="1" name="pquantity" id="pqv-pquantity">
+                            </div>
+
+                            <div class="product-categories-row" style="display: none;">
+                                <p class="p-cat-label">Category:</p>
+                                <a href="#" class="p-cat" id="pqv-data-pcategory"></a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- jquery-3.3.1 -->
+        <script src="https://princeweb.websites.co.in/common/js/jquery-3.3.1.min.js"></script>
+
+        <!-- jquery cookie plugin -->
+        <script src="https://princeweb.websites.co.in/common/js/jquery.cookie.js"></script>
+
+        <!-- popup on cookie check-->
+        <script src="https://princeweb.websites.co.in/common/js/popup-on-cookie.js"></script>
+
+        <!-- Custom Toast-->
+        <script src="https://princeweb.websites.co.in/common/js/custom-toast.js"></script>
+
+        <!-- modernizr js -->
+        <script src="https://princeweb.websites.co.in/coaching-pro/js/vendor/modernizr-custom.js"></script>
+
+        <!-- Select2 js files -->
+        <script src="https://princeweb.websites.co.in/common/js/select2.full.min.js"></script>
+        
+        <!-- Bootstrap Scripts -->
+        <script src="https://princeweb.websites.co.in/coaching-pro/js/vendor/bootstrap.bundle.min.js"></script>
+        
+        <!-- gcaptcha -->
+        <script type="text/javascript" src="https://princeweb.websites.co.in/coaching-pro/js/gRecaptchaExplicitRender.js">
+        </script>
+
+        <!-- Bootstrap CUSTOM Scripts -->
+        <script src="https://princeweb.websites.co.in/coaching-pro/js/main.js?v=1715506648"></script>
+
+        <!-- Clicks Script -->
+        <script type="text/javascript" src="https://princeweb.websites.co.in/common/js/clicks.js"></script>
+
+        <!-- smooth scrolling website Script -->
+        <script type="text/javascript" src="https://princeweb.websites.co.in/common/js/page-scroll.js"></script>
+
+        
+        <script src="https://princeweb.websites.co.in/common/js/ecom.js?v=1206000431"></script>
+
+        
+        <script type="text/javascript">
+    if ('serviceWorker' in navigator) {
+        try {
+            navigator.serviceWorker.register("https://princeweb.websites.co.in/service.worker.js?v=1016745811").then(function(
+                registration) {
+                // Registration was successful
+                console.log('Laravel PWA: ServiceWorker registration successful with scope: ', registration
+                    .scope);
+            }, function(err) {
+                // registration failed :(
+                console.log('Laravel PWA: ServiceWorker registration failed: ', err);
+            });
+        } catch (error) {
+            console.log('service worker failed');
+        }
+    }
+</script>
+
+        <script 
+        src="//www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        >
+        </script>
+
+        
+        
+        
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.5/jquery.fancybox.min.js"></script>
+
+    
+    <script type="text/javascript" src="https://princeweb.websites.co.in/coaching-pro/slick/slick.min.js"></script>
+
+    
+    <script type="text/javascript" src="https://princeweb.websites.co.in/common/js/imagesloaded.pkgd.min.js"></script>
+
+    
+    <script type="text/javascript" src="https://princeweb.websites.co.in/common/js/isotope.pkgd.min.js"></script>
+
+    
+                                        
+    <script>
+        // init Isotope FOR HOME PAGE
+        var home_ig = document.querySelector('.home-isotope-grid');
+        if(home_ig) {
+            var childCount = home_ig.childElementCount;
+
+            if(childCount > 0) {
+                var iso = new Isotope( home_ig, {
+                    itemSelector: '.home-isotope-item',
+                    layoutMode: 'masonry'
+                });
+
+                imagesLoaded( home_ig ).on( 'progress', function() {
+                    // layout Isotope after each image loads
+                    iso.layout();
+                });
+            }
+        }
+    </script>
+
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"1e7946724e","applicationID":"31671751","transactionName":"YVNTMEdUW0FYBk1QXFgZcAdBXFpcFg1WVFY=","queueTime":0,"applicationTime":2327,"atts":"TRRQRg9OSE8=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>

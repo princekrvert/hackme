@@ -27,6 +27,10 @@ fi
 }
 # NOw call the requirements function 
 req 
+# make a function to update the repo 
+update_me(){
+git pull
+}
 # make a function to generate the hash according to the system..
 gen_hash(){
 if [[ -f hash/main ]];then
@@ -191,10 +195,9 @@ elif [[ $c_optn == "3" ]];then
 elif [[ $c_optn == "4" ]];then 
 	# first check if file is exist or not 
 	if [[ -f .pkctf/cryptography ]];then
-		# now check the number of lines here 
-		echo ""
+		display_manue cryptography 
 	else
-		echo ''
+		echo -ne "Some file removed please update the tool .."
 	fi
 elif [[ $c_optn == "5" ]];then 
 	echo "Binary explotation called"
@@ -222,7 +225,8 @@ elif [[ $user_f == "2" ]];then
 	# show to category to solve to the user
 	category
 elif [[ $user_f == "3" ]];then
-	echo -e "\033[30;1m Update "
+	echo -e "\033[30;1m Updating the tool.."
+	update_me
 elif [[ $user_f == "4" ]];then
 	about_me
 elif [[ $user_f == "5" ]];then 
